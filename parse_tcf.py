@@ -43,6 +43,8 @@ class TCF_File:
             token_id = correction.attrib["tokenIDs"]
             correction_value = correction.text
             self.corrections_dict[token_id] = correction_value
+        
+        self.tales_dict = self.get_tales()
 
     def get_sentence(self, sentence_id):
         token_ids = self.sentences_dict[sentence_id]
@@ -67,7 +69,67 @@ class TCF_File:
         tales_titles_ids = tales_titles_ids[86:]
         return tales_titles_ids
 
+    def get_tales(self):
+        tales_titles_ids = self.get_tales_title_ids()
+        tale_sentence_ids = []
+        tales_dict = {}
+        id_counter = 0
+        for sentence_id, token_ids in self.sentences_dict.items():
+            if sentence_id in tales_titles_ids:
+                if sentence_id == tales_titles_ids[0]:
+                    #this is the start of the first tale, don't add the Vorwort to tales_dict
+                    tale_sentence_ids = []
+                    if sentence_id not in tale_sentence_ids:
+                        tale_sentence_ids.append(sentence_id)
+                else:
+                    # a new tale starts here, add collected sentence ids to tales_dict and reset tale_sentence_ids
+                    tale_id = "t" + str(id_counter)
+                    id_counter += 1
+                    tales_dict[tale_id] = tale_sentence_ids
+                    tale_sentence_ids = []
+                    if sentence_id not in tale_sentence_ids:
+                        tale_sentence_ids.append(sentence_id)
+            if sentence_id == "s10c3":
+                # this is the last sentence of the corpus, needed to add the last tale to tales_dict
+                tale_sentence_ids.append(sentence_id)
+                tale_id = "t" + str(id_counter)
+                tales_dict[tale_id] = tale_sentence_ids
+            else:
+                if sentence_id not in tale_sentence_ids:
+                        tale_sentence_ids.append(sentence_id)
+        return tales_dict
+    
+    def add_tales_layer(self):
+        text_corpus = self.tree.findall(
+                        ".//{http://www.dspin.de/data/textcorpus}TextCorpus")[0]
+        tales_node = ET.Element("tales")
+        for tale_id, sentence_ids in self.tales_dict.items():
+            sentence_ids_string = sentence_ids[0]
+            for sentence_id in sentence_ids[1:]:
+                sentence_ids_string = sentence_ids_string + " " + sentence_id
+            sentence_ids_string = sentence_ids_string.strip()
+            tale_node = ET.Element("tale", attrib={"ID": tale_id, "sentenceIDs": sentence_ids_string})
+            tales_node.append(tale_node)
+        text_corpus.append(tales_node)
+
+def indent(elem, level=0):
+    i = "\n" + level*"  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = i + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+        for elem in elem:
+            indent(elem, level+1)
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = i
 
 if __name__ == "__main__":
     tcf_file = TCF_File()
-    tales_titles_ids = tcf_file.get_tales_title_ids()
+    tcf_file.add_tales_layer()
+    root = tcf_file.tree.getroot()
+    indent(root)
+    tcf_file.tree.write("test_output.tcf.xml", encoding="utf-8", xml_declaration=True)
