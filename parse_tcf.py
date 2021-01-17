@@ -112,6 +112,13 @@ class TCF_File:
             tales_node.append(tale_node)
         text_corpus.append(tales_node)
 
+    def get_nouns(self):
+        nouns = set()
+        for token_id, pos in self.pos_dict.items():
+            if pos == "NN" or pos == "NE":
+                nouns.add(self.lemmas_dict[token_id])
+        return nouns
+
 def indent(elem, level=0):
     i = "\n" + level*"  "
     if len(elem):
@@ -129,7 +136,11 @@ def indent(elem, level=0):
 
 if __name__ == "__main__":
     tcf_file = TCF_File()
+    """
     tcf_file.add_tales_layer()
     root = tcf_file.tree.getroot()
     indent(root)
     tcf_file.tree.write("test_output.tcf.xml", encoding="utf-8", xml_declaration=True)
+    """
+    nouns = tcf_file.get_nouns()
+    print(len(nouns))
