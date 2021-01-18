@@ -119,6 +119,15 @@ class TCF_File:
                 nouns.add(self.lemmas_dict[token_id])
         return nouns
 
+    def get_freqs(self, d:dict):
+        freq_dict = {}
+        for token_id, text in d.items():
+            if text in freq_dict:
+                freq_dict[text] += 1
+            else:
+                freq_dict[text] = 1
+        return freq_dict
+
 def indent(elem, level=0):
     i = "\n" + level*"  "
     if len(elem):
@@ -144,3 +153,13 @@ if __name__ == "__main__":
     """
     nouns = tcf_file.get_nouns()
     print(len(nouns))
+    lemma_freqs = tcf_file.get_freqs(tcf_file.lemmas_dict)
+    nouns_sorted = {}
+    nouns_top = {}
+    lemma_freqs = dict(sorted(lemma_freqs.items(), key=lambda item: item[1], reverse=True))
+    for lemma, freq in lemma_freqs.items():
+        if lemma in nouns:
+            nouns_sorted[lemma] = freq
+            if freq >= 20:
+                nouns_top[lemma] = freq
+    print(len(nouns_top))
