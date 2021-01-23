@@ -228,23 +228,8 @@ class TCF_File:
         stats["top_nouns_tales"] = top_nouns_tales
         return stats
 
-if __name__ == "__main__":
+def write_stats(tcf_file:TCF_File):
     tcf_file = TCF_File()
-
-    """
-    nouns = tcf_file.get_nouns()
-    print(len(nouns))
-    lemma_freqs = tcf_file.get_freqs(tcf_file.lemmas_dict)
-    nouns_sorted = {}
-    nouns_top = {}
-    lemma_freqs = dict(sorted(lemma_freqs.items(), key=lambda item: item[1], reverse=True))
-    for lemma, freq in lemma_freqs.items():
-        if lemma in nouns:
-            nouns_sorted[lemma] = freq
-            if freq >= 20:
-                nouns_top[lemma] = freq
-    print(len(nouns_top))
-    """
     stats_list = []
     with open("corpus_stats.tsv", "wt") as f:
         tsv_writer = csv.writer(f, delimiter="\t")
@@ -270,3 +255,7 @@ if __name__ == "__main__":
         tsv_writer.writerow(["top_nouns_full", "freq_full", "top_nouns_tales", "freq_tales"])
         for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
             tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
+
+if __name__ == "__main__":
+    tcf_file = TCF_File()
+    write_stats(tcf_file)
