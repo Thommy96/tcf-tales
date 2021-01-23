@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import statistics
 import csv
 from xml.dom import minidom
+import itertools
 
 class TCF_File:
 
@@ -257,6 +258,49 @@ def write_stats(tcf_file:TCF_File):
         for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
             tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
 
+def explore_relations(tcf_file:TCF_File, characters:list):
+    character_combinations = list(itertools.combinations(characters, 2))
+    character_freqs_total = {}
+    character_freqs_tales = {}
+    relation_freqs_total = {}
+    relation_freqs_tales = {}
+
+    for tale_id, sentence_ids in tcf_file.tales_dict.items():
+        for sentence_id in sentence_ids:
+            sentence_lemmas = []
+            for token_id in tcf_file.sentences_dict[sentence_id]:
+                lemma = tcf_file.lemmas_dict[token_id]
+                sentence_lemmas.append(lemma)
+                if lemma in characters:
+                    if lemma in character_freqs_total:
+                        character_freqs_total[lemma] += 1
+                    else:
+                        character_freqs_total[lemma] = 1
+                    if lemma in character_freqs_tales:
+                        if tale_id in character_freqs_tales[lemma]:
+                            character_freqs_tales[lemma][tale_id] += 1
+                        else:
+                            character_freqs_tales[lemma][tale_id] = 1
+                    else:
+                        character_freqs_tales[lemma] = {}
+                        character_freqs_tales[lemma][tale_id] = 1
+            for character_combination in character_combinations:
+                if character_combination[0] in sentence_lemmas and character_combination[1] in sentence_lemmas:
+                    if character_combination in relation_freqs_total:
+                        relation_freqs_total[character_combination] += 1
+                    else:
+                        relation_freqs_total[character_combination] = 1
+                    if character_combination in relation_freqs_tales:
+                        if tale_id in relation_freqs_tales[character_combination]:
+                            relation_freqs_tales[character_combination][tale_id] += 1
+                        else:
+                            relation_freqs_tales[character_combination][tale_id] = 1
+                    else:
+                        relation_freqs_tales[character_combination] = {}
+                        relation_freqs_tales[character_combination][tale_id] = 1
+    
+    return character_freqs_total, character_freqs_tales, relation_freqs_total, relation_freqs_tales
+
 def prettify(elem):
     """Return a pretty-printed XML string for the Element.
     """
@@ -264,7 +308,7 @@ def prettify(elem):
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
-def construct_new_tree(tcf_file:TCF_File):
+def construct_new_tree(tcf_file:TCF_File, explore_list):
     root_node = ET.Element('TextCorpus')
 
     comment = ET.Comment('tales without metadata, orthography and Vorwort, for easier processing with neo4j')
@@ -275,12 +319,16 @@ def construct_new_tree(tcf_file:TCF_File):
     tokens_node = ET.SubElement(root_node, 'tokens')
     lemmas_node = ET.SubElement(root_node, 'lemmas')
     tags_node = ET.SubElement(root_node, 'POStags')
+    characters_node = ET.SubElement(root_node, 'characters')
+    relations_node = ET.SubElement(root_node, 'relations')
 
     tale_elements = []
     sentence_elements = []
     token_elements = []
     lemma_elements = []
     tag_elements = []
+    character_elements = []
+    relation_elements = []
 
     for tale_id, sentence_ids in tcf_file.tales_dict.items():
         #tale
@@ -311,12 +359,39 @@ def construct_new_tree(tcf_file:TCF_File):
                 tag_element = ET.Element('tag', {'tokenIDs':token_id})
                 tag_element.text = tcf_file.pos_dict[token_id]
                 tag_elements.append(tag_element)
+    
+    character_id_dict = {}
+    id_counter = 0
+    for character, freq in explore_list[0].items():
+        character_id = 'c' + str(id_counter)
+        character_id_dict[character] = character_id
+        id_counter += 1
+        tale_ids = " ".join(list(explore_list[1][character].keys()))
+        str_freqs = [str(freq) for freq in list(explore_list[1][character].values())]
+        tale_freqs = " ".join(str_freqs)
+        character_element = ET.Element('character', {'ID':character_id, 'freq':str(freq), 'taleIDs':tale_ids, 'taleFreqs':tale_freqs})
+        character_element.text = character
+        character_elements.append(character_element)
+
+    id_counter = 0
+    for character_combination, freq in explore_list[2].items():
+        relation_id = 'r' + str(id_counter)
+        id_counter += 1
+        character_ids = " ".join([character_id_dict[character_combination[0]], character_id_dict[character_combination[1]]])
+        tale_ids = " ".join(list(explore_list[3][character_combination].keys()))
+        str_freqs = [str(freq) for freq in list(explore_list[3][character_combination].values())]
+        tale_freqs = " ".join(str_freqs)
+        relation_element = ET.Element('relation', {'ID':relation_id, 'freq':str(freq), 'characterIDs':character_ids, 'taleIDs':tale_ids, 'taleFreqs':tale_freqs})
+        relation_element.text = str(character_combination)
+        relation_elements.append(relation_element)
 
     tales_node.extend(tale_elements)
     sentences_node.extend(sentence_elements)
     tokens_node.extend(token_elements)
     lemmas_node.extend(lemma_elements)
     tags_node.extend(tag_elements)
+    characters_node.extend(character_elements)
+    relations_node.extend(relation_elements)
 
     doc = prettify(root_node)
     with open('tales_neo4j.tcf.xml', 'w') as f:
@@ -325,4 +400,6 @@ def construct_new_tree(tcf_file:TCF_File):
 if __name__ == "__main__":
     tcf_file = TCF_File()
     #write_stats(tcf_file)
-    construct_new_tree(tcf_file)
+    characters = ['König', 'Fuchs', 'Königin', 'Wolf', 'Königstochter', 'Jäger']
+    explore_list = explore_relations(tcf_file, characters)
+    construct_new_tree(tcf_file, explore_list)
