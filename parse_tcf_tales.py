@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import statistics
 import csv
+from xml.dom import minidom
 
 class TCF_File:
 
@@ -256,6 +257,72 @@ def write_stats(tcf_file:TCF_File):
         for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
             tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
 
+def prettify(elem):
+    """Return a pretty-printed XML string for the Element.
+    """
+    rough_string = ET.tostring(elem, 'utf-8')
+    reparsed = minidom.parseString(rough_string)
+    return reparsed.toprettyxml(indent="  ")
+
+def construct_new_tree(tcf_file:TCF_File):
+    root_node = ET.Element('TextCorpus')
+
+    comment = ET.Comment('tales without metadata, orthography and Vorwort, for easier processing with neo4j')
+    root_node.append(comment)
+
+    tales_node = ET.SubElement(root_node, 'tales')
+    sentences_node = ET.SubElement(root_node, 'sentences')
+    tokens_node = ET.SubElement(root_node, 'tokens')
+    lemmas_node = ET.SubElement(root_node, 'lemmas')
+    tags_node = ET.SubElement(root_node, 'POStags')
+
+    tale_elements = []
+    sentence_elements = []
+    token_elements = []
+    lemma_elements = []
+    tag_elements = []
+
+    for tale_id, sentence_ids in tcf_file.tales_dict.items():
+        #tale
+        tale_title = " ".join(tcf_file.get_sentence(sentence_ids[0]))
+        sentence_ids_string = " ".join(sentence_ids)
+        tale_element = ET.Element('tale', {'ID':tale_id, 'title':tale_title, 'sentenceIDs':sentence_ids_string})
+        tale_elements.append(tale_element)
+
+        #sentence
+        for sentence_id in sentence_ids:
+            token_ids = tcf_file.sentences_dict[sentence_id]
+            token_ids_string = " ".join(token_ids)
+            sentence_element = ET.Element('sentence', {'ID':sentence_id, 'tokenIDs':token_ids_string})
+            sentence_elements.append(sentence_element)
+        
+            #token
+            for token_id in token_ids:
+                token_element = ET.Element('token', {'ID':token_id})
+                token_element.text = tcf_file.tokens_dict[token_id]
+                token_elements.append(token_element)
+
+                #lemma
+                lemma_element = ET.Element('lemma', {'tokenIDs':token_id})
+                lemma_element.text = tcf_file.lemmas_dict[token_id]
+                lemma_elements.append(lemma_element)
+
+                #tag
+                tag_element = ET.Element('tag', {'tokenIDs':token_id})
+                tag_element.text = tcf_file.pos_dict[token_id]
+                tag_elements.append(tag_element)
+
+    tales_node.extend(tale_elements)
+    sentences_node.extend(sentence_elements)
+    tokens_node.extend(token_elements)
+    lemmas_node.extend(lemma_elements)
+    tags_node.extend(tag_elements)
+
+    doc = prettify(root_node)
+    with open('tales_neo4j.tcf.xml', 'w') as f:
+        f.write(doc)
+
 if __name__ == "__main__":
     tcf_file = TCF_File()
-    write_stats(tcf_file)
+    #write_stats(tcf_file)
+    construct_new_tree(tcf_file)
