@@ -1,9 +1,6 @@
 from tcf_file import TCF_File
 from corpus_statistics import Corpus_Statistics
 from annotate_relations import Annotation
-import statistics
-import csv
-import matplotlib.pyplot as plt
 from docopt import docopt
 
 def main():
