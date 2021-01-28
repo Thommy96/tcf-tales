@@ -1,8 +1,10 @@
-import xml.etree.ElementTree as ET
 import statistics
 import csv
 from xml.dom import minidom
 import itertools
+import matplotlib.pyplot as plt
+
+import xml.etree.ElementTree as ET
 
 class TCF_File:
 
@@ -233,12 +235,14 @@ class TCF_File:
 def write_stats(tcf_file:TCF_File):
     tcf_file = TCF_File()
     stats_list = []
+    number_tale_sentences = []
     with open("corpus_stats.tsv", "wt") as f:
         tsv_writer = csv.writer(f, delimiter="\t")
         tsv_writer.writerow(["title", "number_of_sentences", "number_of_tokens", "number_of_lemmas", "mean_sentence_length", "lemma_token_ratio"])
         for tale_id, sentence_ids in tcf_file.tales_dict.items():
             tale_stats = tcf_file.get_tale_stats(tale_id)
             stats_list.append(tale_stats)
+            number_tale_sentences.append(tale_stats["number_of_sentences"])
             tsv_writer.writerow([tale_stats["title"], tale_stats["number_of_sentences"], tale_stats["number_of_tokens"], tale_stats["number_of_lemmas"], tale_stats["mean_sentence_length"], tale_stats["lemma_token_ratio"]])
         full_stats = tcf_file.get_full_stats(stats_list)
         tsv_writer.writerow([full_stats["title"], full_stats["number_of_sentences"], full_stats["number_of_tokens"], full_stats["number_of_lemmas"], full_stats["mean_sentence_length"], full_stats["lemma_token_ratio"]])
@@ -257,6 +261,26 @@ def write_stats(tcf_file:TCF_File):
         tsv_writer.writerow(["top_nouns_full", "freq_full", "top_nouns_tales", "freq_tales"])
         for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
             tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
+    
+    # number of sentences per tail plot
+    tale_ids = list(tcf_file.tales_dict.keys())
+    fig, ax = plt.subplots()
+    ax.plot(range(0,86), number_tale_sentences, 'go-')
+    ax.set(xlabel='tale id', ylabel='number of sentences', title='number of sentences per tale')
+    ax.grid(True)
+    fig.savefig("sentences_per_tale.png")
+
+    #print(number_tale_sentences)
+    print(statistics.mean(number_tale_sentences))
+    print(full_stats["pos_freqs"])
+
+    print(len(full_stats["nouns_freqs"]))
+    # noun freqs sorted plot
+    fig, ax = plt.subplots()
+    ax.plot(range(0,3247), list(full_stats["nouns_freqs"].values()), 'yo')
+    ax.set(xlabel='noun', ylabel='frequency', title='noun frequency distribution')
+    ax.grid(True)
+    fig.savefig("noun_frequency_distribution.png")
 
 def explore_relations(tcf_file:TCF_File, characters:list):
     character_combinations = list(itertools.combinations(characters, 2))
@@ -399,7 +423,7 @@ def construct_new_tree(tcf_file:TCF_File, explore_list):
 
 if __name__ == "__main__":
     tcf_file = TCF_File()
-    #write_stats(tcf_file)
-    characters = ['König', 'Fuchs', 'Königin', 'Wolf', 'Königstochter', 'Jäger']
-    explore_list = explore_relations(tcf_file, characters)
-    construct_new_tree(tcf_file, explore_list)
+    write_stats(tcf_file)
+    #characters = ['König', 'Fuchs', 'Königin', 'Wolf', 'Königstochter', 'Jäger']
+    #explore_list = explore_relations(tcf_file, characters)
+    #construct_new_tree(tcf_file, explore_list)
