@@ -1,3 +1,7 @@
+"""
+@author: Thomas Bott
+@author: Sebastian Sammet
+"""
 from tcf_file import TCF_File
 from corpus_statistics import Corpus_Statistics
 from annotate_relations import Annotation

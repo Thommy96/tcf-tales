@@ -1,11 +1,22 @@
+"""
+@author: Thomas Bott
+@author: Sebastian Sammet
+"""
 import csv
 from tcf_file import TCF_File
 import statistics
 import matplotlib.pyplot as plt
 
 class Corpus_Statistics:
+    """This class is used to generate corpus statistics and to ouput them.
+    """
 
-    def __init__(self, tcf_file:TCF_File):
+    def __init__(self, tcf_file:TCF_File) -> None:
+        """Initialize
+
+        Args:
+            tcf_file (TCF_File): tcf file object
+        """
         self.tcf_file = tcf_file
 
         self.tale_stats = []
@@ -15,22 +26,14 @@ class Corpus_Statistics:
 
         self.full_stats = self.get_full_stats()
 
-    def get_tale_stats(self, tale_id:str):
-        """
-        title
-        number_of_sentences
-        number_of_tokens
-        number_of_lemmas
-        mean_sentence_length
-        tokens_freqs
-        lemmas_freqs
-        pos_freqs
-        nouns_freqs
-        lemma_token_ratio
-        top10_tokens
-        top10_lemmas
-        top10_pos
-        top10_nouns
+    def get_tale_stats(self, tale_id:str) -> dict:
+        """This function calculates statistics for a tale.
+
+        Args:
+            tale_id (str): tale id
+
+        Returns:
+            dict: dictionary containing statistics
         """
         title = " ".join(self.tcf_file.get_sentence(self.tcf_file.tales_dict[tale_id][0])) 
         number_of_sentences = len(self.tcf_file.tales_dict[tale_id]) 
@@ -100,7 +103,12 @@ class Corpus_Statistics:
         stats["top10_nouns"] = top10_nouns
         return stats
 
-    def get_full_stats(self):
+    def get_full_stats(self) -> dict:
+        """This function aggregates all tale stats and returns statistics for the full corpus (without Vorwort)
+
+        Returns:
+            dict: dictionary conataining statistics
+        """
         title = "full corpus"
         number_of_sentences = 0
         number_of_tokens = 0
@@ -172,7 +180,9 @@ class Corpus_Statistics:
         stats["top_nouns_tales"] = top_nouns_tales
         return stats
 
-    def write_plot_stats(self):
+    def write_plot_stats(self) -> None:
+        """This function writes some statistics (tales and full) to csv and generates plots as pngs.
+        """
         stats_list = []
         number_tale_sentences = []
         with open("corpus_stats.tsv", "wt") as f:

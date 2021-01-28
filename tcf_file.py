@@ -1,8 +1,21 @@
+"""
+@author: Thomas Bott
+@author: Sebastian Sammet
+"""
 import xml.etree.ElementTree as ET
 
 class TCF_File:
+    """
+    This class is used to parse a XML file in TCF format and save all its information (annotation layers, elements, ...).
+    Furthermore tale boundaries are reconstructed and annotated.
+    """
 
-    def __init__(self, tcf_path:str):
+    def __init__(self, tcf_path:str) -> None:
+        """Ititialize a tcf object, i.e. search the xml document with xpath queries and store information in dictionaries
+
+        Args:
+            tcf_path (str): path to the tcf xml file
+        """
         self.tree = ET.parse(tcf_path)
         self.tokens = self.tree.findall(
                         ".//{http://www.dspin.de/data/textcorpus}tokens")[0]
@@ -46,7 +59,12 @@ class TCF_File:
         
         self.tales_dict = self.get_tales()
 
-    def get_tales(self):
+    def get_tales(self) -> dict:
+        """This function constructs the tales dict by assigning all corresponding sentence ids for each tale.
+
+        Returns:
+            dict: taleID, sentenceIDs
+        """
         tales_titles_ids = self.get_tales_title_ids()
         tale_sentence_ids = []
         tales_dict = {}
@@ -76,7 +94,12 @@ class TCF_File:
                         tale_sentence_ids.append(sentence_id)
         return tales_dict
 
-    def get_tales_title_ids(self):
+    def get_tales_title_ids(self) -> list:
+        """This function finds all tale title ids
+
+        Returns:
+            list: tale title ids
+        """
         tales_titles_ids = []
         for sentence_id, token_ids in self.sentences_dict.items():
             sentence = self.get_sentence(sentence_id)
@@ -91,7 +114,15 @@ class TCF_File:
         tales_titles_ids = tales_titles_ids[86:]
         return tales_titles_ids
 
-    def get_sentence(self, sentence_id):
+    def get_sentence(self, sentence_id:str) -> list:
+        """This function returns the corrsponding sentence as a list of token for a sentence id
+
+        Args:
+            sentence_id (str): sentence id
+
+        Returns:
+            list: list of token of the sentence
+        """
         token_ids = self.sentences_dict[sentence_id]
         sentence = []
         for token_id in token_ids:

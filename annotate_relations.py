@@ -1,16 +1,33 @@
+"""
+@author: Thomas Bott
+@author: Sebastian Sammet
+"""
 import itertools
 from xml.dom import minidom
 from tcf_file import TCF_File
 import xml.etree.ElementTree as ET
 
 class Annotation:
+    """This class is used to add annotation layers and create a new xml file with only the relevant information.
+    """
 
-    def __init__(self, tcf_file:TCF_File, characters:list):
+    def __init__(self, tcf_file:TCF_File, characters:list) -> None:
+        """Initialize
+
+        Args:
+            tcf_file (TCF_File): tcf file object
+            characters (list): list of characters
+        """
         self.tcf_file = tcf_file
         self.characters = characters
         self.charcter_freqs_total, self.character_freqs_tales, self.relation_freqs_total, self.relation_freqs_tales = self.explore_relations()
 
-    def explore_relations(self):
+    def explore_relations(self) -> tuple:
+        """This function explores relations for the specified characters.
+
+        Returns:
+            tuple: character frequencies (total and per tale), relation frequencies (total and per tale)
+        """
         character_combinations = list(itertools.combinations(self.characters, 2))
         character_freqs_total = {}
         character_freqs_tales = {}
@@ -53,7 +70,9 @@ class Annotation:
     
         return character_freqs_total, character_freqs_tales, relation_freqs_total, relation_freqs_tales
 
-    def construct_new_tree(self):
+    def construct_new_tree(self) -> None:
+        """This function generates a new ElementTree and writes it to xml.
+        """
         root_node = ET.Element('TextCorpus')
 
         comment = ET.Comment('tales without metadata, orthography, Vorwort and namespaces, for easier processing with neo4j')
