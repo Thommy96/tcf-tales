@@ -1,7 +1,7 @@
 # tcf-tales
 Authors: Thomas Bott, Sebastian Sammet
 ## Project of Text Technology
-This Repository contains scripts and files for the project of the course Text Technology WS 20/21.
+This Repository contains scripts and files for the project of the course Text Technology WS 20/21 at the IMS, University of Stuttgart.
 
 ## Worflow
 You can run the main.py to collect and prepare the tcf xml file.
