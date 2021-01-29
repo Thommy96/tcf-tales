@@ -3,6 +3,7 @@
 @author: Sebastian Sammet
 """
 import xml.etree.ElementTree as ET
+from urllib.request import urlopen
 
 class TCF_File:
     """
@@ -10,13 +11,14 @@ class TCF_File:
     Furthermore tale boundaries are reconstructed and annotated.
     """
 
-    def __init__(self, tcf_path:str) -> None:
+    def __init__(self) -> None:
         """Ititialize a tcf object, i.e. search the xml document with xpath queries and store information in dictionaries
 
         Args:
             tcf_path (str): path to the tcf xml file
         """
-        self.tree = ET.parse(tcf_path)
+        tcf_url = urlopen('https://www.deutschestextarchiv.de/book/download_fulltcf/32290')
+        self.tree = ET.parse(tcf_url)
         self.tokens = self.tree.findall(
                         ".//{http://www.dspin.de/data/textcorpus}tokens")[0]
         self.tokens_dict = {}

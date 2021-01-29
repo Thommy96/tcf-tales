@@ -10,15 +10,13 @@ from docopt import docopt
 def main():
     args = docopt("""
     Usage:
-        corpus_statistics.py <corpus_path> <character_file>
+        corpus_statistics.py <character_file>
     
     Arguments:
-        <corpus_path> = path to corpus in tcf format
         <character_file> = file containing the character which should be processed, format: one character per line
     """)
 
     # get arguments
-    corpus_path = args['<corpus_path>']
     character_file = args['<character_file>']
 
     characters = []
@@ -27,9 +25,12 @@ def main():
             line = line.strip()
             characters.append(line)
 
-    tcf_file = TCF_File(corpus_path)
+    print("Downloading TCF file and setting up the TCF object ...")
+    tcf_file = TCF_File()
+    print("Computing corpus statistics ...")
     corpus_statistics = Corpus_Statistics(tcf_file)
     corpus_statistics.write_plot_stats()
+    print("Adding annotation layers and constructing a new xml document ...")
     annotations = Annotation(tcf_file, characters)
     annotations.construct_new_tree()
 
