@@ -1,0 +1,88 @@
+create constraint on (t:Token) assert t.id is unique;
+create constraint on (s:Sentence) assert s.id is unique;
+create constraint on (m:Tale) assert m.id is unique;
+create constraint on (l:Lemma) assert l.text is unique;
+create constraint on (p:Pos) assert p.text is unique;
+create constraint on (c:Character) assert c.id is unique;
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/tokens')
+YIELD value as tokens
+UNWIND tokens._children AS token
+create (t:Token {id:token.ID, text:token._text})
+WITH collect(t) AS tokens
+UNWIND apoc.coll.pairs(tokens)[0..-1] AS value
+WITH value[0] AS a, value[1] AS b
+CREATE (a)-[:NEXT_TOKEN]->(b);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/sentences')
+YIELD value as sentences
+UNWIND sentences._children AS sentence
+MATCH (t1:Token{id:head(split(sentence.tokenIDs, " "))})
+MATCH (t2:Token{id:last(split(sentence.tokenIDs, " "))})
+CREATE (s:Sentence{id:sentence.ID})
+CREATE (s)-[:SENTENCE_STARTS]->(t1)
+CREATE (s)-[:SENTENCE_ENDS]->(t2)
+WITH collect(s) as sentences
+UNWIND apoc.coll.pairs(sentences)[0..-1] AS value
+WITH value[0] as a, value[1] as b
+CREATE (a)-[:NEXT_SENTENCE]->(b);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/lemmas')
+YIELD value as lemmas
+UNWIND lemmas._children AS lemma
+MATCH (t:Token{id:lemma.tokenIDs})
+MERGE (l:Lemma{text:lemma._text})
+CREATE (t)-[:LEMMATISIERT]->(l);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/lemmas')
+YIELD value as lemmas
+UNWIND lemmas._children AS lemma
+MATCH (t:Token{id:lemma.tokenIDs}) SET t.Lemma = lemma._text;
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/POStags')
+YIELD value as tags
+UNWIND tags._children AS pos
+MATCH (t:Token{id:pos.tokenIDs})
+MERGE (p:Pos{text:pos._text})
+CREATE (t)-[:TAGGED]->(p);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/POStags')
+YIELD value as tags
+UNWIND tags._children AS pos
+MATCH (t:Token{id:pos.tokenIDs}) SET t.Pos = pos._text;
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/tales')
+YIELD value as tales
+UNWIND tales._children AS tale
+MATCH (s1:Sentence{id:head(split(tale.sentenceIDs, " "))})
+MATCH (s2:Sentence{id:last(split(tale.sentenceIDs, " "))})
+CREATE (m:Tale{id:tale.ID, title:tale.title})
+CREATE (m)-[:TALE_STARTS]->(s1)
+CREATE (m)-[:TALE_ENDS]->(s2)
+WITH collect(m) as tales
+UNWIND apoc.coll.pairs(tales)[0..-1] AS value
+WITH value[0] as a, value[1] as b
+CREATE (a)-[:NEXT_TALE]->(b);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/characters')
+YIELD value as characters
+UNWIND characters._children AS character
+WITH split(character.taleIDs, " ") AS taleIDs, split(character.taleFreqs, " ") AS taleFreqs, character
+UNWIND range(0, size(taleIDs)-1) AS i
+MATCH (m:Tale{id:taleIDs[i]})
+MERGE (c:Character{id:character.ID, name:character._text, freq:character.freq})
+CREATE (c)-[:APPEARS_IN{frequency:taleFreqs[i]}]->(m);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/relations')
+YIELD value as relations
+UNWIND relations._children AS relation
+WITH split(relation.taleIDs, " ") AS taleIDs, split(relation.taleFreqs, " ") AS taleFreqs, split(relation.characterIDs, " ") AS characterIDs, relation
+MATCH (c1:Character{id:characterIDs[0]})
+MATCH (c2:Character{id:characterIDs[1]})
+MERGE (r:Relation{id:relation.ID, frequency:relation.freq, characters:relation._text})
+CREATE (c1)-[:RELATION]->(r)
+CREATE (c2)-[:RELATION]->(r)
+WITH taleIDs, taleFreqs, r
+UNWIND range(0, size(taleIDs)-1) AS i
+MATCH (m:Tale{id:taleIDs[i]})
+CREATE (r)-[:HAPPENS_IN{frequency:taleFreqs[i]}]->(m);
