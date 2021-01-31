@@ -3,7 +3,7 @@ Authors: Thomas Bott, Sebastian Sammet
 ## Project of Text Technology
 This Repository contains scripts and files for the project of the course Text Technology WS 20/21 at the IMS, University of Stuttgart.
 
-## Worflow
+## Workflow
 You can run the main.py to collect and prepare the tcf xml file.
 You have to specifiy a list of characters you want to investigate in a txt file with one character per line. For testing you can use the test_characters.txt.
 E.g. run in the command line: python3 <path_to>/main.py <path_to>/test_characters.txt
