@@ -183,6 +183,7 @@ class Corpus_Statistics:
     def write_plot_stats(self) -> None:
         """This function writes some statistics (tales and full) to csv and generates plots as pngs.
         """
+        top_nouns = set()
         number_tale_sentences = []
         with open("corpus_stats.tsv", "wt") as f:
             tsv_writer = csv.writer(f, delimiter="\t")
@@ -191,6 +192,8 @@ class Corpus_Statistics:
             for tale_stat in self.tale_stats:
                 number_tale_sentences.append(tale_stat["number_of_sentences"])
                 tsv_writer.writerow([tale_stat["title"], tale_stat["number_of_sentences"], tale_stat["number_of_tokens"], tale_stat["number_of_lemmas"], tale_stat["mean_sentence_length"], tale_stat["lemma_token_ratio"], ", ".join(list(tale_stat["top10_nouns"].keys()))])
+                for n in list(tale_stat["top10_nouns"].keys()):
+                    top_nouns.add(n)
 
             tsv_writer.writerow([self.full_stats["title"], self.full_stats["number_of_sentences"], self.full_stats["number_of_tokens"], self.full_stats["number_of_lemmas"], self.full_stats["mean_sentence_length"], self.full_stats["lemma_token_ratio"], ", ".join(list(self.full_stats["top10_nouns"].keys()))])
         
@@ -208,6 +211,11 @@ class Corpus_Statistics:
             tsv_writer.writerow(["top_nouns_full", "freq_full", "top_nouns_tales", "freq_tales"])
             for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
                 tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
+                top_nouns.add(full_noun)
+        
+        with open("top_nouns.txt", "wt") as f:
+            for noun in top_nouns:
+                f.write(noun + '\n')
 
         # number of sentences per tail plot
         fig, ax = plt.subplots()
