@@ -10,7 +10,7 @@ from docopt import docopt
 def main():
     args = docopt("""
     Usage:
-        corpus_statistics.py <character_file>
+        main.py <character_file>
     
     Arguments:
         <character_file> = file containing the character which should be processed, format: one character per line
