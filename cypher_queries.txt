@@ -1,0 +1,7 @@
+MATCH (r:Relation)
+RETURN r.characters, r.frequency
+ORDER BY toInteger(r.frequency) DESC
+
+MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation)
+RETURN t.title, r.characters, h.frequency, r.frequency
+ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC
