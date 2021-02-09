@@ -183,7 +183,6 @@ class Corpus_Statistics:
     def write_plot_stats(self) -> None:
         """This function writes some statistics (tales and full) to csv and generates plots as pngs.
         """
-        stats_list = []
         number_tale_sentences = []
         with open("corpus_stats.tsv", "wt") as f:
             tsv_writer = csv.writer(f, delimiter="\t")
