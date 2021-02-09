@@ -4,6 +4,7 @@ create constraint on (m:Tale) assert m.id is unique;
 create constraint on (l:Lemma) assert l.text is unique;
 create constraint on (p:Pos) assert p.text is unique;
 create constraint on (c:Character) assert c.id is unique;
+create constraint on (r:Relation) assert r.id is unique;
 
 CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/tokens')
 YIELD value as tokens
