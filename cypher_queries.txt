@@ -1,7 +1,38 @@
+//return
+
+//return list of relations sorted by frequency over all tales
 MATCH (r:Relation)
 RETURN r.characters, r.frequency
-ORDER BY toInteger(r.frequency) DESC
+ORDER BY toInteger(r.frequency) DESC;
 
+//return list of relations sorted by frequecy for each tale
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation)
 RETURN t.title, r.characters, h.frequency, r.frequency
-ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC
+ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
+
+//return list of relations sorted by frequecy for a specific tale (replace <tale_id>)
+MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(r:Relation)
+RETURN t.title, r.characters, h.frequency, r.frequency
+ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
+
+//display
+
+//display nodes for tale and relation for a specific tale where the relation appears more than once
+MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(r:Relation)
+WHERE toInteger(h.frequency) > 1
+RETURN t, h, r;
+
+//display a specific relation and the tales it appears in (more than once)
+MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation {characters: "('Kind', 'Wald')"})
+WHERE toInteger(h.frequency) > 1
+RETURN t, h, r;
+
+//display a specific character and all tales in which it appears more than once
+MATCH (c:Character {name:"<character_name>"})-[a:APPEARS_IN]->(t:Tale)
+WHERE toInteger(a.frequency) > 1
+RETURN c, a, t;
+
+//display all relations for a character (frequency > 1)
+MATCH (c:Character {name:"<character_name>"})-[re:RELATION]->(r:Relation)<-[re2:RELATION]-(c2:Character)
+WHERE toInteger(r.frequency) > 1
+RETURN c, re, r, re2, c2;
