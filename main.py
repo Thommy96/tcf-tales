@@ -24,6 +24,12 @@ def main():
         for line in character_file:
             line = line.strip()
             characters.append(line)
+    
+    # schneewittchen more detailed analysis
+    schneewittchen_characters = ['Königin', 'Gemahlin', 'Frau', 'Stiefmutter', 'Krämerfrau', 'Alte', 'Weib', 'Bauersfrau', 'Bauerin', 'Krämerin', 'Schneewittchen', 'Kind', 'Töchterlein', 'Mädchen', 'Königstochter', 'Spiegel', 'Spieglein', 'Jäger', 'Zwerg', 'Zwerglein', 'Königssohn', 'König', 'Koch']
+    for sc in schneewittchen_characters:
+        if sc not in characters:
+            characters.append(sc)
 
     print("Downloading TCF file and setting up the TCF object ...")
     tcf_file = TCF_File()
