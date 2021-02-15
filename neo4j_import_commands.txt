@@ -9,7 +9,7 @@ create constraint on (r:Relation) assert r.id is unique;
 CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/tokens')
 YIELD value as tokens
 UNWIND tokens._children AS token
-create (t:Token {id:token.ID, text:token._text})
+CREATE (t:Token {id:token.ID, text:token._text})
 WITH collect(t) AS tokens
 UNWIND apoc.coll.pairs(tokens)[0..-1] AS value
 WITH value[0] AS a, value[1] AS b
@@ -33,7 +33,7 @@ YIELD value as lemmas
 UNWIND lemmas._children AS lemma
 MATCH (t:Token{id:lemma.tokenIDs})
 MERGE (l:Lemma{text:lemma._text})
-CREATE (t)-[:LEMMATISIERT]->(l);
+CREATE (t)-[:LEMMATIZED]->(l);
 
 CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/lemmas')
 YIELD value as lemmas
