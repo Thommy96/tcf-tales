@@ -36,3 +36,7 @@ RETURN c, a, t;
 MATCH (c:Character {name:"<character_name>"})-[re:RELATION]->(r:Relation)<-[re2:RELATION]-(c2:Character)
 WHERE toInteger(r.frequency) > 1
 RETURN c, re, r, re2, c2;
+
+//display lemma for a token
+MATCH (t:Token {text: 'Spieglein'})-[r:LEMMATISIERT]->(l:Lemma)
+RETURN l
