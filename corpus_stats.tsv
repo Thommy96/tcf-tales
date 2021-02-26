@@ -85,4 +85,119 @@ title	number_of_sentences	number_of_tokens	number_of_lemmas	mean_sentence_length
 84. Hans heirathet .	10	497	200	49.7	0.4024144869215292	Hans, Kleid, Vetter, Frau, Placken, Feld, Milch, Weißbrot, Heller, Hand
 85. Die Goldkinder .	49	2155	459	43.97959183673469	0.21299303944315545	Mann, Frau, Fisch, Wald, Goldkind, Schloß, Vater, Haus, Pferd, Hirsch
 86. Der Fuchs und die Gänse .	5	263	125	52.6	0.4752851711026616	Fuchs, Gans, Ga, Leben, Gnade, Gebet, Reihe, Wiese, Herde, Schrecken
-full corpus	4125	147659	33532	36.15414928732694	0.22709079703912394	König, Frau, Mann, De, Kind, Haus, Wald, Tag, Bruder, Vater
+87. Der Arme und der Reiche .	46	1794	454	39	0.2530657748049052	Gott, Reiche, Wunsch, Frau, Haus, Mann, Arme, Pferd, Sattel, Rücken
+88. Das singende springende Löweneckerchen .	61	2542	501	41.67213114754098	0.1970889063729347	Löwe, Nacht, Taube, Vogel, Meer, Löweneckerchen, Vater, Mann, Tochter, Schloß
+89. Die Gänsemagd .	67	2277	519	33.985074626865675	0.22793148880105402	König, Kürdchen, Falada, Kammerjungfer, Pferd, Königstochter, Herz, Braut, Mutter, Gans
+90. Der junge Riese .	86	3346	582	38.906976744186046	0.17393903167961747	Amtmann, Großknecht, Pferd, Riese, Vater, Sohn, Junge, Lohn, Holz, Jahr
+91. Dat Erdmänneken .	46	2056	639	44.69565217391305	0.3107976653696498	De, He, Männeken, Königstochter, Ünne, Ase, Nig, König, Weste, Tochter
+92. Der König vom goldenen Berg .	65	2623	535	40.353846153846156	0.20396492565764393	Vater, Sohn, Berg, Männchen, König, Kaufmann, Mann, Jahr, Wasser, Kopf
+93. Die Rabe .	72	2417	436	33.56944444444444	0.18038891187422423	Mann, Schloß, Rabe, Tag, Riese, Stromberg, Haus, Zeit, Frau, Garten
+94. Die kluge Bauerntochter .	37	1513	342	40.891891891891895	0.2260409781890284	König, Bauer, Tochter, Herr, Mörser, Bediente, Stößer, Frau, Weg, Ochse
+95. Der alte Hildebrand .	35	1574	327	44.97142857142857	0.20775095298602286	Bauerin, I, Pfarre, Gevatter, D', A, Bauer, Weib, Haus, Kind
+96. De drei Vügelkens .	48	1645	495	34.270833333333336	0.3009118541033435	De, Eine, König, Water, Frau, Up, Fisker, Junge, Ase, Königin
+97. Das Wasser des Lebens .	70	2426	485	34.65714285714286	0.19991755976916736	Prinz, König, Leben, Wasser, Brot, Zwerg, Jäger, Sohn, Vater, Bruder
+98. Doctor Allwissend .	24	829	237	34.541666666666664	0.2858866103739445	Doktor, Geld, Bauer, Herr, Bediente, Tisch, Frau, Schüssel, Krebs, Wagen
+99. Der Geist im Glas .	34	2012	470	59.1764705882353	0.23359840954274355	Vater, Schüler, Geist, Axt, Sohn, Geld, Wald, Taler, Nachbar, Stimme
+100. Des Teufels rußiger Bruder .	38	1386	350	36.473684210526315	0.25252525252525254	Teufel, Soldat, Hölle, Kessel, Hans, Wirt, Feuer, Kehrdreck, Gold, Auge
+101. Der Bärenhäuter .	66	2153	535	32.621212121212125	0.24849047840222946	Bärenhäuter, Mann, Soldat, Jahr, Rock, Bär, Teufel, Braut, Ring, Geld
+102. Der Zaunkönig und der Bär .	22	1023	286	46.5	0.27956989247311825	Bär, Zaunkönig, Kind, Wolf, Königin, Vogel, König, Frau, Fuchs, Schwanz
+103. Der süße Brei .	7	265	109	37.857142857142854	0.41132075471698115	'töpfchen, Brei, Mädchen, Mutter, Haus, Kind, Topfchen, Wald, Frau, Jammer
+104. Die klugen Leute .	44	1720	410	39.09090909090909	0.23837209302325582	Frau, Mann, Bauer, Kuh, Geld, Himmel, Tag, Pferd, Beutel, Stock
+105. Märchen von der Unke .	22	533	194	24.227272727272727	0.36397748592870544	Unke, Kind, Milch, Ding, Krone, Mutter, Schüsselchen, Kopfchen, Schatz, Brocken
+106. Der arme Müllerbursch und das Kätzchen .	38	1495	361	39.3421052631579	0.24147157190635452	Hans, Pferd, Mühle, Katzechen, Müller, Katze, Silber, Jahr, Tag, Hauschen
+107. Die beiden Wanderer .	145	4442	890	30.63448275862069	0.20036019810895994	Schneider, König, Schuster, Tag, Auge, Brot, Stadt, Rücken, Schneiderlein, Weg
+108.	63	2214	400	35.142857142857146	0.18066847335140018	Igel, Hans, König, Vater, Weg, Haus, Dudelsack, Göckelhahn, Hahn, Schwein
+109. Das Todtenhemdchen .	6	289	124	48.166666666666664	0.4290657439446367	Mutter, Totenhemdchen, Nacht, Gott, Kind, Sarg, Büblein, Jahr, Welt, Tag
+110. Der Jude im Dorn .	40	1968	500	49.2	0.2540650406504065	Knecht, Jude, Richter, Geige, Heller, Jahr, Herr, Lohn, Männchen, Vogel
+111. Der gelernte Jäger .	66	2432	499	36.84848484848485	0.20518092105263158	Riese, König, Jäger, Vater, Stück, Hauptmann, Königstochter, Name, Jungfrau, Welt
+112. Der Dreschflegel vom Himmel .	12	399	167	33.25	0.41854636591478694	Bauer, Dreschflegel, Himmel, Metzger, Korn, Glück, Maß, Rübsamen, Taler, Baum
+113. De beiden Künigeskinner .	86	3793	789	44.104651162790695	0.20801476403901925	De, He, Ik, König, Up, Königssohn, Ase, Tochter, Awerst, Et
+114. Vom klugen Schneiderlein .	34	1289	362	37.911764705882355	0.2808378588052754	Schneiderlein, Bär, Prinzessin, Nuß, Kopf, Tatze, Schneider, Herz, Stall, Rätsel
+115. Die klare Sonne bringts an den Tag .	17	589	207	34.64705882352941	0.35144312393887944	Tag, Sonne, Jude, Geld, Arbeit, Heller, Schneider, Wort, Schneidergesell, Handwerk
+116. Das blaue Licht .	47	1909	464	40.61702127659574	0.24305919329491882	Soldat, Männchen, Licht, König, Hexe, Königstochter, Tag, Tasche, Straße, Erbse
+117. Das eigensinnige Kind .	5	141	75	28.2	0.5319148936170213	Kind, Erde, Ärmchen, Mutter, Grab, Gott, Wohlgefallen, Arzt, Totenbettchen, Höhe
+118. Die drei Feldscherer .	37	1108	307	29.945945945945947	0.2770758122743682	Wirt, Hand, Mädchen, Auge, Herz, Schrank, Feldscherer, Teller, Soldat, Schweineherz
+119. Die sieben Schwaben .	37	1115	392	30.135135135135137	0.3515695067264574	Schulz, Herr, Veitli, Spieß, Schwabe, Wasser, Jackli, Weg, Wade, Marli
+120. Die drei Handwerksburschen .	31	1290	334	41.61290322580645	0.2589147286821705	Wirt, Geld, Recht, Kaufmann, Teufel, Richter, Handwerksbursche, Stadt, Arbeit, Mann
+121. Der Königssohn der sich vor nichts fürchtet .	68	2269	520	33.36764705882353	0.22917584839136185	Königssohn, Riese, Apfel, Ring, Baum, Jungfrau, Löwe, Hand, Wasser, Auge
+122. Der Krautesel .	73	2871	633	39.32876712328767	0.22048066875653083	Jäger, Mädchen, Salat, Alte, Herz, Mantel, Vogel, Morgen, Eselin, Schloß
+123. Die Alte im Wald .	26	1002	295	38.53846153846154	0.2944111776447106	Baum, Taubechen, Mädchen, Schlüsselchen, Alte, Hand, Tag, Ring, Wald, Schnabel
+124. Die drei Brüder .	18	724	242	40.22222222222222	0.3342541436464088	Haus, Vater, Bruder, Sohn, Barbier, Geld, Handwerk, Meisterstück, Hufschmied, Fechtmeister
+125. Der Teufel und seine Großmutter .	30	1372	348	45.733333333333334	0.2536443148688047	Teufel, Drache, Rätsel, Soldat, Jahr, Hm, Großmutter, Geld, Heer, Peitschechen
+126. Ferenand getrü und Ferenand ungetrü .	48	2190	575	45.625	0.2625570776255708	De, He, Eine, Ik, König, Ferenand, Awerst, Getrü, Schimmel, Et
+127. Der Eisenofen .	75	2299	435	30.653333333333332	0.18921270117442365	Vater, Eisenofen, Königssohn, Wald, Ofen, Königstochter, Tag, Braut, Berg, Nacht
+128. Die faule Spinnerin .	25	816	236	32.64	0.28921568627450983	Mann, Frau, Garn, Haspelholz, Haspel, Wald, Klauel, Axt, Kessel, Werg
+129. Die vier kunstreichen Brüder .	42	1726	439	41.095238095238095	0.25434530706836617	Bruder, Vater, Mann, Ei, Jäger, Schiff, Dieb, Königstochter, Zeit, Sterngucker
+130. Einäuglein , Zweiäuglein und Dreiäuglein .	88	2684	505	30.5	0.18815201192250372	Zweiäuglein, Einäuglein, Dreiäuglein, Ziege, Tischlein, Schwester, Baum, Auge, Mutter, Ritter
+131. Die schöne Katrinelje und Pif Paf Poltrie .	13	482	109	37.07692307692308	0.22614107883817428	Katrinelje, Schwester, Piff, Paff, Poltrie, Mutter, Malcho, Bruder, Hohenstolz, 'guten
+132. Der Fuchs und das Pferd .	12	539	189	44.916666666666664	0.35064935064935066	Pferd, Fuchs, Löwe, Herr, Dienst, Feld, Wald, Trost, Höhle, Schweif
+133. Die zertanzten Schuhe .	43	1547	408	35.97674418604651	0.26373626373626374	König, Soldat, Schuh, Prinz, Bett, Nacht, Kleid, Morgen, Wein, Becher
+134. Die sechs Diener .	61	2872	607	47.08196721311475	0.21135097493036212	Königssohn, Auge, Tochter, Alte, Mann, Diener, Jungfrau, Bund, Dicke, Lange
+135. Die weiße und die schwarze Braut .	55	1594	403	28.98181818181818	0.25282308657465496	König, Bruder, Braut, Schwester, Tochter, Gott, Kutscher, Bild, Stieftochter, Reginer
+136. Der Eisenhans .	114	3470	650	30.43859649122807	0.1873198847262248	König, Mann, Wald, Knabe, Tag, Haar, Eisenhanse, Apfel, Brunnen, Hutchen
+137. De drei schwatten Princessinnen .	21	786	289	37.42857142857143	0.36768447837150126	De, He, Nig, Berg, Prinzessin, Sohn, Schloß, Gesicht, Weste, Sin
+138. Knoist un sine dre Sühne .	5	181	84	36.2	0.46408839779005523	De, Sühne, Mann, Buode, Boom, Kapelle, Wiggewaater, Soist, Wuhnde, Feld
+139. Dat Mäken von Brakel .	6	156	100	26	0.6410256410256411	Eine, Mäken, Et, De, Brakel, Anne, Nig, Mal, Mann, Neimes
+140. Das Hausgesinde .	7	238	47	34	0.19747899159663865	Walpe, Mann, Cham, Kind, Grind, Weige, 'häst, Hedd, Hippodeige, Knecht
+141. Das Lämmchen und Fischchen .	23	638	227	27.73913043478261	0.3557993730407524	Lammchen, Fischchen, Koch, Bruderchen, Schwesterchen, Wiese, Haus, Stiefmutter, Teich, Gast
+142. Simeliberg .	27	885	279	32.77777777777778	0.3152542372881356	Berg, Semsi, Bruder, Schatz, Arme, Scheffel, Reiche, Karren, Mann, 'berg
+143. Up Reisen gohn .	13	478	158	36.76923076923077	0.3305439330543933	De, Nig, Junge, Ligge, Aas, Up, Seg, Kerl, Vull, Morgen
+144. Das Eselein .	36	1402	391	38.94444444444444	0.2788873038516405	König, Eselein, Laute, Reich, Tochter, Jüngling, Kind, Nacht, Tod, Kopf
+145. Der undankbare Sohn .	6	171	90	28.5	0.5263157894736842	Sohn, Huhn, Angesicht, Mann, Kröte, Frau, Haustür, Vater, Alte, Trunk
+146. Die Rübe .	28	1176	366	42	0.3112244897959184	Bruder, Sack, Rübe, König, Schüler, Weisheit, Stunde, Bauer, Wagen, Ding
+147. Das junggeglühte Männlein .	17	559	252	32.88235294117647	0.45080500894454384	Schmied, Herr, Männlein, Jüngling, Zeit, Haus, Esse, Balg, Feuer, Löschtrog
+148. Des Herrn und des Teufels Gethier .	11	377	175	34.27272727272727	0.46419098143236076	Herr, Teufel, Schwanz, Geiß, Geise, Gott, Wolf, Schaden, Eichenlaub, Schuld
+149. Der Hahnenbalken .	11	292	126	26.545454545454547	0.4315068493150685	Balken, Leute, Zauberer, Hahn, Mädchen, Strohhalm, Schimpf, Kleid, Wasser, Auge
+150. Die alte Bettelfrau .	6	171	84	28.5	0.49122807017543857	Frau, Junge, Bettelfrau, Tür, Feuer, Wasser, Gott, Lohn, Schelm, 'kommt
+151. Die drei Faulen .	3	254	109	84.66666666666667	0.42913385826771655	König, 'vater, Reich, Strick, Hand, Faulen, Sohn, Tod, Zeit, Bett
+151 * .	47	1148	373	24.425531914893618	0.3249128919860627	Wagen, Tag, Herr, Arbeit, Bein, Faulheit, Pferd, Fuß, Knecht, Leib
+152. Das Hirtenbüblein .	7	368	151	52.57142857142857	0.41032608695652173	Frage, König, Sprache, Hirtenbüblein, Stunde, Hirtenbübchen, Antwort, Kind, Tropfen, Meer
+153. Die Sternthaler .	10	342	142	34.2	0.4152046783625731	Mädchen, Stückchen, Brot, Kind, Hemdlein, Hemd, Taler, Sterntaler, Vater, Mutter
+154. Der gestohlene Heller .	12	360	150	30	0.4166666666666667	Kind, Fremde, Heller, Vater, Mutter, Kammer, Tag, Mittag, Dielenritze, Frau
+155. Die Brautschau .	4	169	87	42.25	0.514792899408284	Käse, Rinde, Hirte, Mutter, Brautschau, Schwester, Wahl, Vorzug, Rat, Lad
+156. Die Schlickerlinge .	10	195	101	19.5	0.517948717948718	Mädchen, Flachs, Kleid, Braut, Bräutigam, Schlickerlinge, Knoten, Haufen, Erde, Dienstmädchen
+157. Der Sperling und seine vier Kinder .	18	1009	352	56.05555555555556	0.34886025768087214	Sohn, Vater, Sperling, Welt, Sommer, Leute, Junge, Alte, Vöglein, Garten
+158. Das Märchen vom Schlauraffenland .	15	353	173	23.533333333333335	0.49008498583569404	Kind, Märchen, Brücke, Fuder, Roß, Trier, Recht, Wasser, Ofen, Schlaraffenland
+159. Das Dietmarsische Lügenmärchen .	11	216	116	19.636363636363637	0.5370370370370371	Hase, Land, Lügenmärchen, Huhn, Bauch, Himmel, Rücken, Hölle, Amboß, Mühlstein
+160. Räthselmärchen .	5	140	73	28	0.5214285714285715	Blume, Feld, Mann, Haus, Rätselmärchen, Frau, Zeit, Tag, Gespiele, Vormittag
+161. Schneeweißchen und Rosenroth .	74	2668	671	36.054054054054056	0.2514992503748126	Bär, Rosenrot, Schneeweißchen, Zwerg, Kind, Mutter, Bart, Wald, Mädchen, Baum
+162. Der kluge Knecht .	9	296	118	32.888888888888886	0.39864864864864863	Herr, Hans, Knecht, Kuh, Haus, Wort, Weisheit, Dienst, Mühe, Feld
+163. Der gläserne Sarg .	85	2440	742	28.705882352941178	0.3040983606557377	Schneider, Hirsch, Stein, Auge, Saal, Bruder, Fremde, Stimme, Schloß, Fräulein
+164. Der faule Heinz .	33	1064	364	32.24242424242424	0.34210526315789475	Heinz, Trine, Ziege, Honig, Haus, Frau, Tag, Krug, Bett, Gans
+165. Der Vogel Greif .	100	3082	658	30.82	0.2134977287475665	Hans, Isch, D', E, De, Vogelgriff, Gsi, Tochter, König, Au
+166. Der starke Hans .	82	2868	624	34.97560975609756	0.2175732217573222	Hans, Vater, Mutter, Zwerg, Räuber, Tannendreher, Jahr, Haus, Stab, Fleisch
+167. Das Bürle im Himmel .	8	269	126	33.625	0.4684014869888476	Bürle, Herr, Himmel, Au, D', Isch, Riche, Himmelspforte, E, Gsi
+168. Die hagere Liese .	9	511	193	56.77777777777778	0.3776908023483366	Mann, Lenz, Gulden, Kuh, Milch, Liese, Heinz, Morgen, Abend, Müdeigkeit
+169. Das Waldhaus .	66	1993	463	30.196969696969695	0.23231309583542398	Mädchen, Tier, Huhnchen, Hahnchen, Kuh, Alte, Mann, Wald, Nacht, Bett
+170. Lieb und Leid theilen .	15	430	161	28.666666666666668	0.3744186046511628	Liebe, Leid, Frau, Hand, Schneider, Obrigkeit, Zeitlang, Haar, Elle, Schere
+171. Der Zaunkönig .	46	1270	370	27.608695652173914	0.29133858267716534	Vogel, König, Auge, Eule, Loch, Zaunkönig, Zeit, Schmied, Herr, Gott
+172. Die Scholle .	9	266	124	29.555555555555557	0.46616541353383456	Hering, Scholle, Schwanz, Hecht, Hiering, Fisch, Ordnung, Reich, Weg, Schlag
+173. Rohrdommel und Wiedehopf .	13	274	111	21.076923076923077	0.4051094890510949	Rohrdommel, Wiedehopf, Kuh, Herde, Hirte, Herr, Wiese, Ruf, Vieh, Sand
+174. Die Eule .	27	891	346	33	0.388327721661055	Scheuer, Eule, Herr, Leben, Stadt, Schuhu, Geschrei, Ungeheuer, Auge, Tier
+175. Der Mond .	31	790	297	25.483870967741936	0.3759493670886076	Mond, Licht, Wagen, Teil, Land, Himmel, Finsternis, Sonne, Eichbaum, Taler
+176. Die Lebenszeit .	22	665	220	30.227272727272727	0.3308270676691729	Jahr, Gott, Esel, Zeit, Mensch, Herr, Hund, Affe, Lebenszeit, 'herr
+177. Die Boten des Todes .	18	688	248	38.22222222222222	0.36046511627906974	Tod, Bote, Riese, Mensch, Weg, Tag, 'jch, Welt, Auge, Jüngling
+178. Meister Pfriem .	57	1539	472	27	0.30669265756985054	Pfriem, Meister, Wagen, Pferd, Himmel, Schuh, Haus, Balken, Engel, Arbeit
+179. Die Gänsehirtin am Brunnen .	156	4329	832	27.75	0.1921921921921922	Alte, Graf, Mädchen, König, Auge, Gans, Haus, Rücken, Tochter, Königin
+180. Die ungleichen Kinder Evas .	27	770	266	28.51851851851852	0.34545454545454546	Kind, Eva, Herr, Hand, Adam, Segen, Haus, Welt, Gott, Heu
+181. Die Nixe im Teich .	97	2326	575	23.97938144329897	0.2472055030094583	Frau, Wasser, Nixe, Weiher, Ufer, Alte, Vollmond, Jahr, Müller, Jäger
+182. Die Geschenke des kleinen Volkes .	33	977	347	29.606060606060606	0.35516888433981575	Schneider, Goldschmied, Kohle, Alte, Tasche, Bart, Volk, Hügel, Mann, Tanz
+183. Der Riese und der Schneider .	29	834	275	28.75862068965517	0.32973621103117506	Riese, Schneider, Wald, Wasser, 'warum, Brunnen, Quelle, Diener, Holz, Sinn
+184. Der Nagel .	11	288	124	26.181818181818183	0.4305555555555556	Pferd, Nagel, Kaufmann, Eile, Nacht, Haus, Mantelsack, Roß, 'herr, Hinterfuß
+185. Der arme Junge im Grab .	48	1342	398	27.958333333333332	0.2965722801788376	Junge, Brief, Mann, Bauer, Tag, Richter, Traube, Tod, Grab, Stroh
+186. Die wahre Braut .	96	2810	667	29.270833333333332	0.23736654804270463	Mädchen, Hand, Arbeit, Abend, Tag, Alte, Schloß, Linde, Braut, Stiefmutter
+187. Der Hase und der Jgel .	47	1514	499	32.212765957446805	0.3295904887714663	De, Hase, Swinegel, Fro, Aver, Wöör, Up, He, To, Du
+188. Spindel , Weberschiffchen und Nadel .	42	1146	353	27.285714285714285	0.3080279232111693	Mädchen, Spindel, Nadel, Hand, Haus, Königssohn, Faden, Weberschiffchen, Ende, Arbeit
+189. Der Bauer und der Teufel .	16	406	162	25.375	0.39901477832512317	Bäuerlein, Teufel, Erde, Acker, Schatz, Frucht, Rübe, Zeit, Bauer, Streiche
+190. Die Brosamen auf dem Tisch .	7	197	110	28.142857142857142	0.5583756345177665	Güggel, Tisch, Uffe, Dhüendli, 'nei, Nei, Dfrau, Brosame, Einisch, Frau
+191. Das Meerhäschen .	46	1301	354	28.282608695652176	0.27209838585703305	Königstochter, Fenster, Fuchs, Jüngling, Rabe, Fisch, Schloß, Haupt, Tag, Pfahl
+192. Der Meisterdieb .	98	3388	745	34.57142857142857	0.21989374262101535	Graf, Dieb, Sack, Herr, Meister, Pfarrer, Sohn, Meisterdieb, Bauer, Fremde
+193. Der Trommler .	117	4167	747	35.61538461538461	0.17926565874730022	Trommler, Mädchen, Glasberg, Riese, Abend, Hexe, Alte, Arbeit, Wald, Königstochter
+194. Die Kornähre .	11	247	128	22.454545454545453	0.5182186234817814	Ähre, Gott, Halm, Mensch, Herr, Kornähre, Erde, Fruchtbarkeit, Boden, Sechzigfältig
+195. Der Grabhügel .	51	1589	467	31.15686274509804	0.2938955317809943	Soldat, Gold, Stiefel, Arme, Teufel, Bauer, Grabhügel, Korn, Kind, Nacht
+196. Oll Rinkrank .	30	925	281	30.833333333333332	0.3037837837837838	De, He, Barg, Eine, König, To, Rinkrank, Königsdocht, Bart, Tochter
+197. Die Krystallkugel .	33	1143	364	34.63636363636363	0.3184601924759405	Jüngling, Schloß, Königstochter, Ei, Meer, Gestalt, Sonne, Hut, Kristallkugel, Macht
+198. Jungfrau Maleen .	79	2179	493	27.582278481012658	0.22625057365764112	Jungfrau, Maleen, Braut, De, Kirche, Vater, Königssohn, Kammer, Brennesselbusch, Kirchentür
+199. Der Stiefel von Büffelleder .	42	1586	419	37.76190476190476	0.26418663303909207	Soldat, Jäger, Räuber, Alte, Wald, Flasche, Tag, Weg, Hand, Braten
+200. Der goldene Schlüssel .	8	197	102	24.625	0.5177664974619289	Schlüssel, Kastenchen, Schnee, Sache, Winterszeit, Junge, Holz, Schlitten, Haus, Feuer
+full corpus	8657	302452	73414	35.35194731895284	0.2427294248343539	König, De, Frau, Mann, Tag, Haus, Kind, Vater, Wald, Mädchen
