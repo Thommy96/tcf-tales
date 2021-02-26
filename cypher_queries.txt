@@ -15,6 +15,11 @@ MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(r:Relation)
 RETURN t.title, r.characters, h.frequency, r.frequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
 
+//return list of relations sorted by tale occurrence frequency (in how many different tales the relation appears)
+MATCH (r:Relation)-[h:HAPPENS_IN]->(t:Tale)
+RETURN r.characters, COUNT(h)
+ORDER BY COUNT(h) DESC;
+
 //display
 
 //display nodes for tale and relation for a specific tale where the relation appears more than once
