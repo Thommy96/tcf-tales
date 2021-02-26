@@ -196,24 +196,16 @@ class Corpus_Statistics:
                     top_nouns.add(n)
 
             tsv_writer.writerow([self.full_stats["title"], self.full_stats["number_of_sentences"], self.full_stats["number_of_tokens"], self.full_stats["number_of_lemmas"], self.full_stats["mean_sentence_length"], self.full_stats["lemma_token_ratio"], ", ".join(list(self.full_stats["top10_nouns"].keys()))])
-        
-        top_nouns_full = {}
-        top_nouns_tales = {}
-        for noun, freq in self.full_stats["nouns_freqs"].items():
-            if freq >= 20:
-                top_nouns_full[noun] = freq
-        for noun, freq in self.full_stats["top_nouns_tales"].items():
-            if freq >= 20:
-                top_nouns_tales[noun] = freq
 
-        with open("top_nouns_20.tsv", "wt") as f:
+        with open("top50_nouns.tsv", "wt") as f:
             tsv_writer = csv.writer(f, delimiter="\t")
-            tsv_writer.writerow(["top_nouns_full", "freq_full", "top_nouns_tales", "freq_tales"])
-            for (full_noun, full_freq), (tales_noun, tales_freq) in zip(top_nouns_full.items(), top_nouns_tales.items()):
-                tsv_writer.writerow([full_noun, full_freq, tales_noun, tales_freq])
-                top_nouns.add(full_noun)
+            tsv_writer.writerow(["top 50 nouns over all tales", "freq"])
+            top50 = dict(list(self.full_stats["nouns_freqs"].items())[:50])
+            for noun, freq in top50:
+                tsv_writer.writerow([noun, freq])
+                top_nouns.add(noun)
         
-        with open("top_nouns.txt", "wt") as f:
+        with open("top50_plus_top10Tales_nouns.txt", "wt") as f:
             for noun in top_nouns:
                 f.write(noun + '\n')
 
