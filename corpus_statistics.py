@@ -211,7 +211,7 @@ class Corpus_Statistics:
 
         # number of sentences per tail plot
         fig, ax = plt.subplots()
-        ax.plot(range(0,86), number_tale_sentences, 'go-')
+        ax.plot(range(0,len(self.tcf_file.tales_dict)), number_tale_sentences, 'go-')
         ax.set(xlabel='tale id', ylabel='number of sentences', title='number of sentences per tale')
         ax.grid(True)
         fig.savefig("sentences_per_tale.png")
