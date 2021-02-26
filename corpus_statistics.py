@@ -201,7 +201,7 @@ class Corpus_Statistics:
             tsv_writer = csv.writer(f, delimiter="\t")
             tsv_writer.writerow(["top 50 nouns over all tales", "freq"])
             top50 = dict(list(self.full_stats["nouns_freqs"].items())[:50])
-            for noun, freq in top50:
+            for noun, freq in top50.items():
                 tsv_writer.writerow([noun, freq])
                 top_nouns.add(noun)
         
