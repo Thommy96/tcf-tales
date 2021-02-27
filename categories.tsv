@@ -1,0 +1,46 @@
+Adel	Tier	Fabelwesen	Männlich	Weiblich	Gewerbebezeichnung	Wertgegenstände	Orte	Eigenname	Beziehung	Nahrung	Körperteil	Verschiedenes
+König	Fuchs	Riese	Jüngling	Frau	Koch	Kreuzer	Feld	Johannes	Enkel	Erdbeere	Pfote	Jahr
+Königin	Flohchen	Däumling	Däumling	Schwesterchen	Müller	Gold	Wald	Aschenputtel	Gast	Nußkern	Hand	Kreuzhacke
+Burgherr	Rabe	Wassernixe	Burgherr	Tochter	Knecht	Taler	Bremen	Trude	Schwesterchen	Pfannkuchen	Herz	Zeit
+Sultan	rothfuchs	Hexe	Bruder	Müllerstochter	Pfarrer	Perle	See	Lenchen	Tochter	Weißbrot	Schwanz	Tür
+Kaiser	Hahnchen	Wichtelmann	Bruderchen	Wassernixe	Wirt	Geld	Welt	Schneewittchen	Müllerstochter	Trunk	Fuß	Appell
+Königstochter	Schlange	Hexenmeister	Herr	Weib	Stadtmusikant	Heller	Brunnen	Rotkäppchen	Kind	Wein	Bauch	Sand
+Königssohn	Taubechen	Gaudeifen	Meister	Meisterin	Diener	Silber	Brücke	Holle	Bruder	Bohne	Gesicht	Asche
+	Hasechen	Drachen	Bräutigam	Jungfrau	Schneiderlein		Keller	Else	Gevatterin	Kuchen	Ohr	Herz
+	Lammlein	Zwerg	Wichtelmann	Hexe	Förster		Ecke	Dümmling	Großvater	Brot	Auge	Faß
+	Gans	Zauberin	Hexenmeister	Königin	Räuber		Land	Joringel	Bruderchen	Erbse	Kopf	Spindel
+	Huhn	Teufel	Vater	Mutter	Schuster		Stall	Maria	Gevatter	Käse	Zahn	Gut
+	Ente	Nixe	König	Braut	Papst		Garten	Roland	Vater	Honig	Bein	Jude
+	Löwe	Engel	Bürle	Königstochter	Meister		Spiegelberg	Hänsel	Mutter	Ei	Mund	Tüchlein
+	Häsichen		Knecht	Magd	Arzt		Stallchen	Benjamin	Freier	Butter	Finger	Seits
+	Mauschen		Koch	Großmutter	Jäger		Wiese	Schultheiß	Braut	Wurst		Hand
+	Wölfin		Königssohn	Kochin	Spielmann		Kammer	Nimmersatt	Königstochter	Apfel		Glück
+	Esel		Junge	Toachter	Fährmann		Treppe	Rotkappechen	Großmutter	Suppe		Holz
+	Schwan		Männchen	Mädchen	Magd		Schatzkammer	Drosselbart	Königssohn	Bratwurst		Strohhalm
+	Huhnchen		Knabe		Kochin		Weg	Katerliesechen	Rapunzel	Milch		Ehre
+	Fundevogel		Männlein		Köhler		Haus	Grethel	Eltern	Bier		Wasser
+	Schwein		Vetter		Hirschfänger		Bach	Heinrich	Vetter			Herde
+	Hase		Sohn		Bauer		Glasberg	Toachter	Sohn			Kranke
+	Lamm				Schneider		Himmel	Daumesdick	Pate			Lauf
+	Fisch				Soldat		Schiff	Jorinde				Tod
+	Frosch				Geselle		Nußberg	Fitchers				Frieden
+	Butt				Fuhrmann		Kirche	Dornrösche				
+	Vogelchen						Bett	Jan				
+	Geißlein						Turm	Frieder				
+	Füchsin						Insel	Hans				
+	Ziege						Stadt	Spielhansel				
+	Kuh						Berg					
+	Nachtigall						Hauschen					
+	Katze						Schloß					
+	Wolf						Stube					
+	Hund											
+	Fuchs											
+	Hahn											
+	Hirsch											
+	Vogel											
+	Tier											
+	Rehchen											
+	Sperling											
+	Maus											
+	Pferd											
+	Vöglein											
