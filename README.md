@@ -29,7 +29,7 @@ and find more detailed information regarding the import of xml to Neo4J here: ht
 
 Pay attention to the following steps when setting up the DBMS:
 - put the xml file (tales_neo4j.tcf.cml) in the import folder of the DBMS
-- set apoc.import.file.enabled=true in the config file of the DBMS
+- set 'apoc.import.file.enabled=true' in the config file of the DBMS
 - activate the apoc plugin
 
 You can import the xml file and create a graph with the Cypher commands provided in neo4j_import_commands.txt.
