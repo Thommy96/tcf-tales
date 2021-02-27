@@ -3,6 +3,7 @@
 @author: Sebastian Sammet
 """
 import csv
+import os
 from tcf_file import TCF_File
 import statistics
 import matplotlib.pyplot as plt
@@ -11,13 +12,14 @@ class Corpus_Statistics:
     """This class is used to generate corpus statistics and to ouput them.
     """
 
-    def __init__(self, tcf_file:TCF_File) -> None:
+    def __init__(self, tcf_file:TCF_File, output_dir:str) -> None:
         """Initialize
 
         Args:
             tcf_file (TCF_File): tcf file object
         """
         self.tcf_file = tcf_file
+        self.output_dir = output_dir
 
         self.tale_stats = []
         for tale_id, sentence_ids in tcf_file.tales_dict.items():
@@ -185,7 +187,8 @@ class Corpus_Statistics:
         """
         top_nouns = set()
         number_tale_sentences = []
-        with open("corpus_stats.tsv", "wt") as f:
+        corpus_stats_file = os.path.join(self.output_dir, "corpus_stats.tsv")
+        with open(corpus_stats_file, "wt") as f:
             tsv_writer = csv.writer(f, delimiter="\t")
             tsv_writer.writerow(["title", "number_of_sentences", "number_of_tokens", "number_of_lemmas", "mean_sentence_length", "lemma_token_ratio", "top_10_nouns"])
 
@@ -197,7 +200,8 @@ class Corpus_Statistics:
 
             tsv_writer.writerow([self.full_stats["title"], self.full_stats["number_of_sentences"], self.full_stats["number_of_tokens"], self.full_stats["number_of_lemmas"], self.full_stats["mean_sentence_length"], self.full_stats["lemma_token_ratio"], ", ".join(list(self.full_stats["top10_nouns"].keys()))])
 
-        with open("top50_nouns.tsv", "wt") as f:
+        top50_nouns_file = os.path.join(self.output_dir, "top50_nouns.tsv")
+        with open(top50_nouns_file, "wt") as f:
             tsv_writer = csv.writer(f, delimiter="\t")
             tsv_writer.writerow(["top 50 nouns over all tales", "freq"])
             top50 = dict(list(self.full_stats["nouns_freqs"].items())[:50])
@@ -205,7 +209,8 @@ class Corpus_Statistics:
                 tsv_writer.writerow([noun, freq])
                 top_nouns.add(noun)
         
-        with open("top50_plus_top10Tales_nouns.txt", "wt") as f:
+        top50_plus_top10Tales_nouns_file = os.path.join(self.output_dir, "top50_plus_top10Tales_nouns.txt")
+        with open(top50_plus_top10Tales_nouns_file, "wt") as f:
             for noun in top_nouns:
                 f.write(noun + '\n')
 
@@ -214,7 +219,8 @@ class Corpus_Statistics:
         ax.plot(range(0,len(self.tcf_file.tales_dict)), number_tale_sentences, 'go-')
         ax.set(xlabel='tale id', ylabel='number of sentences', title='number of sentences per tale')
         ax.grid(True)
-        fig.savefig("sentences_per_tale.png")
+        figname1 = os.path.join(self.output_dir, "sentences_per_tale.png")
+        fig.savefig(figname1)
 
         #print(number_tale_sentences)
         #print(statistics.mean(number_tale_sentences))
@@ -226,4 +232,5 @@ class Corpus_Statistics:
         ax.plot(range(0,len(self.full_stats["nouns_freqs"])), list(self.full_stats["nouns_freqs"].values()), 'yo')
         ax.set(xlabel='noun', ylabel='frequency', title='noun frequency distribution')
         ax.grid(True)
-        fig.savefig("noun_frequency_distribution.png")
+        figname2 = os.path.join(self.output_dir, "noun_frequency_distribution.png")
+        fig.savefig(figname2)

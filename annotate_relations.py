@@ -3,6 +3,7 @@
 @author: Sebastian Sammet
 """
 import itertools
+import os
 from xml.dom import minidom
 from tcf_file import TCF_File
 import xml.etree.ElementTree as ET
@@ -12,7 +13,7 @@ class Annotation:
     """This class is used to add annotation layers and create a new xml file with only the relevant information.
     """
 
-    def __init__(self, tcf_file:TCF_File, characters:list, categories:dict) -> None:
+    def __init__(self, tcf_file:TCF_File, characters:list, categories:dict, output_dir:str) -> None:
         """Initialize
 
         Args:
@@ -22,6 +23,7 @@ class Annotation:
         self.tcf_file = tcf_file
         self.characters = characters
         self.categories = categories
+        self.output_dir = output_dir
         self.character_freqs_total, self.character_freqs_tales, self.relation_freqs_total, self.relation_freqs_tales, self.category_freqs_total, self.category_freqs_tales, self.category_relation_freqs_total, self.category_relation_freqs_tales = self.explore_relations()
 
     def explore_relations(self) -> tuple:
@@ -236,7 +238,8 @@ class Annotation:
         categories_relations_node.extend(category_relation_elements)
 
         doc = self.prettify(root_node)
-        with open('tales_neo4j.tcf.xml', 'w') as f:
+        tales_neo4j_file = os.path.join(self.output_dir, "tales_neo4j.tcf.xml")
+        with open(tales_neo4j_file, 'w') as f:
             f.write(doc)
 
     def prettify(self, elem):
