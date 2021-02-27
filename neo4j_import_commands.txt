@@ -1,10 +1,12 @@
-create constraint on (t:Token) assert t.id is unique;
-create constraint on (s:Sentence) assert s.id is unique;
-create constraint on (m:Tale) assert m.id is unique;
-create constraint on (l:Lemma) assert l.text is unique;
-create constraint on (p:Pos) assert p.text is unique;
-create constraint on (c:Character) assert c.id is unique;
-create constraint on (r:Relation) assert r.id is unique;
+CREATE constraint on (t:Token) assert t.id is unique;
+CREATE constraint on (s:Sentence) assert s.id is unique;
+CREATE constraint on (m:Tale) assert m.id is unique;
+CREATE constraint on (l:Lemma) assert l.text is unique;
+CREATE constraint on (p:Pos) assert p.text is unique;
+CREATE constraint on (c:Character) assert c.id is unique;
+CREATE constraint on (r:Relation) assert r.id is unique;
+CREATE constraint on (k:Category) assert k.id is unique;
+CREATE constraint on (kr:CategoryRelation) assert kr.id is unique;
 
 CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/tokens')
 YIELD value as tokens
@@ -87,3 +89,26 @@ WITH taleIDs, taleFreqs, r
 UNWIND range(0, size(taleIDs)-1) AS i
 MATCH (m:Tale{id:taleIDs[i]})
 CREATE (r)-[:HAPPENS_IN{frequency:taleFreqs[i]}]->(m);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/categories')
+YIELD value as categories
+UNWIND categories._children AS category
+WITH split(category.taleIDs, " ") AS taleIDs, split(category.taleFreqs, " ") AS taleFreqs, category
+UNWIND range(0, size(taleIDs)-1) AS i
+MATCH (m:Tale{id:taleIDs[i]})
+MERGE (k:Category{id:category.ID, name:category._text, freq:category.freq})
+CREATE (k)-[:APPEARS_IN{frequency:taleFreqs[i]}]->(m);
+
+CALL apoc.load.xml("file:///tales_neo4j.tcf.xml",'/TextCorpus/categoriesRelations')
+YIELD value as Crelations
+UNWIND Crelations._children AS Crelation
+WITH split(Crelation.taleIDs, " ") AS taleIDs, split(Crelation.taleFreqs, " ") AS taleFreqs, split(Crelation.categoryIDs, " ") AS categoryIDs, Crelation
+MATCH (k1:Category{id:categoryIDs[0]})
+MATCH (k2:Category{id:categoryIDs[1]})
+MERGE (kr:CategoryRelation{id:Crelation.ID, frequency:Crelation.freq, categories:Crelation._text})
+CREATE (k1)-[:RELATION]->(kr)
+CREATE (k2)-[:RELATION]->(kr)
+WITH taleIDs, taleFreqs, kr
+UNWIND range(0, size(taleIDs)-1) AS i
+MATCH (m:Tale{id:taleIDs[i]})
+CREATE (kr)-[:HAPPENS_IN{frequency:taleFreqs[i]}]->(m);
