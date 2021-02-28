@@ -1,0 +1,69 @@
+Adel	Tier	Fabelwesen	Männlich	Weiblich	Gewerbebezeichnung	Wertgegenstände	Orte	Eigenname	Beziehung	Nahrung	Körperteil	Verschiedenes
+König	Fuchs	Riese	Jüngling	Frau	Koch	Kreuzer	Feld	Johannes	Enkel	Erdbeere	Pfote	Jahr
+Königin	Flohchen	Däumling	Däumling	Schwesterchen	Müller	Gold	Wald	Aschenputtel	Gast	Nußkern	Hand	Kreuzhacke
+Burgherr	Rabe	Wassernixe	Burgherr	Tochter	Knecht	Taler	Bremen	Trude	Schwesterchen	Pfannkuchen	Herz	Zeit
+Sultan	rothfuchs	Hexe	Bruder	Müllerstochter	Pfarrer	Perle	See	Lenchen	Tochter	Weißbrot	Schwanz	Tür
+Kaiser	Hahnchen	Wichtelmann	Bruderchen	Wassernixe	Wirt	Geld	Welt	Schneewittchen	Müllerstochter	Trunk	Fuß	Appell
+Königstochter	Schlange	Hexenmeister	Herr	Weib	Stadtmusikant	Heller	Brunnen	Rotkäppchen	Kind	Wein	Bauch	Sand
+Königssohn	Taubechen	Gaudeifen	Meister	Meisterin	Diener	Silber	Brücke	Holle	Bruder	Bohne	Gesicht	Asche
+Graf	Hasechen	Drachen	Bräutigam	Jungfrau	Schneiderlein	Gulden	Keller	Else	Gevatterin	Kuchen	Ohr	Herz
+Prinz	Lammlein	Zwerg	Wichtelmann	Hexe	Förster	Krone	Ecke	Dümmling	Großvater	Brot	Auge	Faß
+	Gans	Zauberin	Hexenmeister	Königin	Räuber	Kristallkugel	Land	Joringel	Bruderchen	Erbse	Kopf	Spindel
+	Huhn	Teufel	Vater	Mutter	Schuster	Sterntaler	Stall	Maria	Gevatter	Käse	Zahn	Gut
+	Ente	Nixe	König	Braut	Papst		Garten	Roland	Vater	Honig	Bein	Jude
+	Löwe	Engel	Bürle	Königstochter	Meister		Spiegelberg	Hänsel	Mutter	Ei	Mund	Tüchlein
+	Häsichen	Drache	Knecht	Magd	Arzt		Stallchen	Benjamin	Freier	Butter	Finger	Seits
+	Mauschen	Vogelgriff	Koch	Großmutter	Jäger		Wiese	Schultheiß	Braut	Wurst	Angesicht	Hand
+	Wölfin	Zauberer	Königssohn	Kochin	Spielmann		Kammer	Nimmersatt	Königstochter	Apfel	Ärmchen	Glück
+	Esel		Junge	Toachter	Fährmann		Treppe	Rotkappechen	Großmutter	Suppe	Arme	Holz
+	Schwan		Männchen	Mädchen	Magd		Schatzkammer	Drosselbart	Königssohn	Bratwurst	Bart	Strohhalm
+	Huhnchen		Knabe	Bauerin	Kochin		Weg	Katerliesechen		Milch	Haupt	Ehre
+	Fundevogel		Männlein	Bettelfrau	Köhler		Haus	Grethel	Eltern	Bier	Hinterfuß	Wasser
+	Schwein		Vetter	Dienstmädchen	Hirschfänger		Bach	Heinrich	Vetter	Braten	Kopfchen	Herde
+	Hase		Sohn	Eselin	Bauer		Glasberg	Toachter	Sohn	Brei	Rücken	Kranke
+	Lamm		Amtmann	Fräulein	Schneider		Himmel	Daumesdick	Pate	Brosame	Schnabel	Lauf
+	Fisch		Handwerksbursche	Kammerjungfer	Soldat		Schiff	Jorinde	Nachbar	Fleisch	Schweif	Tod
+	Frosch		Hauptmann	Prinzessin	Geselle		Nußberg	Fitchers	Schwester	Frucht	Schweineherz	Frieden
+	Butt		Hirtenbübchen	Stiefmutter	Fuhrmann		Kirche	Dornrösche	Stiefmutter	Rübe	Tatze	
+	Vogelchen		Hirtenbüblein	Stieftochter	Amtmann		Bett	Jan	Stieftochter	Salat	Wade	
+	Geißlein		Kerl		Barbier		Turm	Frieder	vater			
+	Füchsin		Männeken		Bärenhäuter		Insel	Hans				
+	Ziege		Prinz		Bauerin		Stadt	Spielhansel				
+	Kuh				Bäuerlein		Berg	Adam				
+	Nachtigall				Bettelfrau		Hauschen	Anne				
+	Katze				Bote		Schloß	Eva				
+	Wolf				Dieb		Stube	Heinz				
+	Hund				Dienstmädchen		Acker	Hohenstolz				
+	Fuchs				Doktor		Grab	Katrinelje				
+	Hahn				Fechtmeister		Grabhügel	Kürdchen				
+	Hirsch				Feldscherer		Himmelspforte	Liese				
+	Vogel				Goldschmied		Höhe	Paff				
+	Tier				Großknecht		Höhle	Piff				
+	Rehchen				Handwerksbursche		Hölle	Poltrie				
+	Sperling				Hauptmann		Hügel	Rosenrot				
+	Maus				Hirte		Meer	Schneeweißchen				
+	Pferd				Hirtenbübchen		Pfarre	Schuhu				
+	Vöglein				Hirtenbüblein		Saal	Veitli				
+	Affe				Hufschmied		Schlaraffenland					
+	Bär				Kaufmann		Teich					
+	Eselein				Kutscher		Weiher					
+	Eselin				Meisterdieb							
+	Eule				Metzger							
+	Fischchen				Richter							
+	Geise				Ritter							
+	Geiß				Schmied							
+	Göckelhahn				Schneidergesell							
+	Güggel				Trommler							
+	Hecht											
+	Hering											
+	Igel											
+	Katzechen											
+	Krebs											
+	Lammchen											
+	Ochse											
+	Roß											
+	Schimmel											
+	Taube											
+	Unke											
+	Wiedehopf											
+	Zaunkönig											
