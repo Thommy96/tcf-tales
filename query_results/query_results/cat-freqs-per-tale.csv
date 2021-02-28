@@ -1,0 +1,913 @@
+﻿Tale,Categories,TaleOccurrenceFrequency,CategoryRelationFrequency
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Körperteil",4,61
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Verschiedenes",3,67
+1. Der Froschkönig oder der eiserne Heinrich .,"Männlich, Körperteil",3,30
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Orte",3,61
+1. Der Froschkönig oder der eiserne Heinrich .,"Körperteil, Verschiedenes",2,23
+1. Der Froschkönig oder der eiserne Heinrich .,"Fabelwesen, Orte",2,15
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Beziehung",2,123
+1. Der Froschkönig oder der eiserne Heinrich .,"Beziehung, Körperteil",2,53
+1. Der Froschkönig oder der eiserne Heinrich .,"Beziehung, Verschiedenes",2,54
+1. Der Froschkönig oder der eiserne Heinrich .,"Orte, Körperteil",2,34
+1. Der Froschkönig oder der eiserne Heinrich .,"Orte, Verschiedenes",1,33
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Gewerbebezeichnung",1,59
+1. Der Froschkönig oder der eiserne Heinrich .,"Männlich, Orte",1,41
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Männlich",1,72
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Weiblich",1,105
+1. Der Froschkönig oder der eiserne Heinrich .,"Wertgegenstände, Orte",1,15
+1. Der Froschkönig oder der eiserne Heinrich .,"Adel, Fabelwesen",1,6
+1. Der Froschkönig oder der eiserne Heinrich .,"Fabelwesen, Beziehung",1,14
+1. Der Froschkönig oder der eiserne Heinrich .,"Fabelwesen, Körperteil",1,9
+1. Der Froschkönig oder der eiserne Heinrich .,"Fabelwesen, Verschiedenes",1,4
+1. Der Froschkönig oder der eiserne Heinrich .,"Orte, Beziehung",1,82
+1. Der Froschkönig oder der eiserne Heinrich .,"Weiblich, Beziehung",1,176
+1. Der Froschkönig oder der eiserne Heinrich .,"Weiblich, Körperteil",1,41
+1. Der Froschkönig oder der eiserne Heinrich .,"Weiblich, Verschiedenes",1,35
+2. Katze und Maus in Gesellschaft .,"Beziehung, Körperteil",1,53
+2. Katze und Maus in Gesellschaft .,"Beziehung, Verschiedenes",1,54
+2. Katze und Maus in Gesellschaft .,"Körperteil, Verschiedenes",1,23
+3. Marienkind .,"Adel, Beziehung",6,123
+3. Marienkind .,"Adel, Verschiedenes",6,67
+3. Marienkind .,"Beziehung, Verschiedenes",6,54
+3. Marienkind .,"Körperteil, Verschiedenes",4,23
+3. Marienkind .,"Orte, Verschiedenes",3,33
+3. Marienkind .,"Weiblich, Orte",2,65
+3. Marienkind .,"Adel, Orte",2,61
+3. Marienkind .,"Beziehung, Körperteil",2,53
+3. Marienkind .,"Adel, Körperteil",2,61
+3. Marienkind .,"Orte, Beziehung",1,82
+3. Marienkind .,"Wertgegenstände, Körperteil",1,14
+3. Marienkind .,"Weiblich, Beziehung",1,176
+3. Marienkind .,"Weiblich, Verschiedenes",1,35
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Weiblich, Beziehung",3,176
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Adel, Weiblich",2,105
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Adel, Beziehung",2,123
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Weiblich, Wertgegenstände",2,20
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Wertgegenstände, Beziehung",2,31
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Adel, Wertgegenstände",2,28
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Männlich, Beziehung",1,185
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Weiblich, Orte",1,65
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Wertgegenstände, Orte",1,15
+"4. Mährchen von einem , der auszog das Fürchten zu lernen .","Orte, Beziehung",1,82
+5. Der Wolf und die sieben jungen Geislein .,"Orte, Beziehung",2,82
+5. Der Wolf und die sieben jungen Geislein .,"Beziehung, Körperteil",2,53
+5. Der Wolf und die sieben jungen Geislein .,"Orte, Körperteil",1,34
+5. Der Wolf und die sieben jungen Geislein .,"Gewerbebezeichnung, Körperteil",1,19
+6. Der treue Johannes .,"Adel, Eigenname",22,31
+6. Der treue Johannes .,"Adel, Körperteil",8,61
+6. Der treue Johannes .,"Eigenname, Verschiedenes",5,11
+6. Der treue Johannes .,"Eigenname, Körperteil",5,12
+6. Der treue Johannes .,"Adel, Gewerbebezeichnung",4,59
+6. Der treue Johannes .,"Adel, Beziehung",4,123
+6. Der treue Johannes .,"Adel, Verschiedenes",4,67
+6. Der treue Johannes .,"Gewerbebezeichnung, Eigenname",3,6
+6. Der treue Johannes .,"Männlich, Eigenname",3,3
+6. Der treue Johannes .,"Tier, Eigenname",3,4
+6. Der treue Johannes .,"Eigenname, Beziehung",3,12
+6. Der treue Johannes .,"Tier, Männlich",2,39
+6. Der treue Johannes .,"Beziehung, Körperteil",2,53
+6. Der treue Johannes .,"Adel, Wertgegenstände",2,28
+6. Der treue Johannes .,"Orte, Körperteil",2,34
+6. Der treue Johannes .,"Adel, Männlich",1,72
+6. Der treue Johannes .,"Männlich, Wertgegenstände",1,32
+6. Der treue Johannes .,"Tier, Verschiedenes",1,11
+6. Der treue Johannes .,"Männlich, Verschiedenes",1,32
+6. Der treue Johannes .,"Adel, Tier",1,16
+6. Der treue Johannes .,"Orte, Eigenname",1,9
+6. Der treue Johannes .,"Weiblich, Eigenname",1,21
+6. Der treue Johannes .,"Adel, Orte",1,61
+6. Der treue Johannes .,"Orte, Beziehung",1,82
+6. Der treue Johannes .,"Adel, Weiblich",1,105
+6. Der treue Johannes .,"Männlich, Nahrung",1,10
+6. Der treue Johannes .,"Eigenname, Nahrung",1,3
+6. Der treue Johannes .,"Weiblich, Beziehung",1,176
+6. Der treue Johannes .,"Weiblich, Körperteil",1,41
+7. Der gute Handel .,"Adel, Wertgegenstände",6,28
+7. Der gute Handel .,"Adel, Männlich",4,72
+7. Der gute Handel .,"Männlich, Wertgegenstände",3,32
+7. Der gute Handel .,"Adel, Weiblich",2,105
+7. Der gute Handel .,"Adel, Beziehung",2,123
+7. Der gute Handel .,"Adel, Verschiedenes",2,67
+7. Der gute Handel .,"Weiblich, Beziehung",2,176
+7. Der gute Handel .,"Männlich, Verschiedenes",1,32
+7. Der gute Handel .,"Wertgegenstände, Verschiedenes",1,8
+8. Der wunderliche Spielmann .,"Orte, Verschiedenes",3,33
+8. Der wunderliche Spielmann .,"Tier, Männlich",1,39
+8. Der wunderliche Spielmann .,"Tier, Körperteil",1,25
+9. Die zwölf Brüder .,"Männlich, Beziehung",15,185
+9. Die zwölf Brüder .,"Orte, Beziehung",4,82
+9. Die zwölf Brüder .,"Tier, Männlich",3,39
+9. Die zwölf Brüder .,"Tier, Beziehung",3,11
+9. Die zwölf Brüder .,"Männlich, Orte",3,41
+9. Die zwölf Brüder .,"Adel, Beziehung",3,123
+9. Die zwölf Brüder .,"Adel, Weiblich",2,105
+9. Die zwölf Brüder .,"Tier, Orte",2,21
+9. Die zwölf Brüder .,"Weiblich, Orte",2,65
+9. Die zwölf Brüder .,"Adel, Orte",2,61
+9. Die zwölf Brüder .,"Männlich, Körperteil",2,30
+9. Die zwölf Brüder .,"Weiblich, Beziehung",2,176
+9. Die zwölf Brüder .,"Weiblich, Verschiedenes",2,35
+9. Die zwölf Brüder .,"Beziehung, Körperteil",2,53
+9. Die zwölf Brüder .,"Beziehung, Verschiedenes",1,54
+9. Die zwölf Brüder .,"Adel, Körperteil",1,61
+9. Die zwölf Brüder .,"Adel, Verschiedenes",1,67
+9. Die zwölf Brüder .,"Tier, Verschiedenes",1,11
+9. Die zwölf Brüder .,"Männlich, Verschiedenes",1,32
+9. Die zwölf Brüder .,"Tier, Weiblich",1,14
+9. Die zwölf Brüder .,"Orte, Verschiedenes",1,33
+9. Die zwölf Brüder .,"Adel, Männlich",1,72
+9. Die zwölf Brüder .,"Männlich, Weiblich",1,33
+10. Das Lumpengesindel .,"Tier, Körperteil",3,25
+10. Das Lumpengesindel .,"Tier, Verschiedenes",1,11
+10. Das Lumpengesindel .,"Gewerbebezeichnung, Körperteil",1,19
+11. Brüderchen und Schwesterchen .,"Weiblich, Beziehung",19,176
+11. Brüderchen und Schwesterchen .,"Männlich, Beziehung",8,185
+11. Brüderchen und Schwesterchen .,"Männlich, Weiblich",8,33
+11. Brüderchen und Schwesterchen .,"Adel, Weiblich",7,105
+11. Brüderchen und Schwesterchen .,"Orte, Beziehung",7,82
+11. Brüderchen und Schwesterchen .,"Weiblich, Orte",6,65
+11. Brüderchen und Schwesterchen .,"Weiblich, Körperteil",6,41
+11. Brüderchen und Schwesterchen .,"Beziehung, Körperteil",6,53
+11. Brüderchen und Schwesterchen .,"Adel, Beziehung",6,123
+11. Brüderchen und Schwesterchen .,"Adel, Verschiedenes",4,67
+11. Brüderchen und Schwesterchen .,"Fabelwesen, Beziehung",4,14
+11. Brüderchen und Schwesterchen .,"Weiblich, Verschiedenes",4,35
+11. Brüderchen und Schwesterchen .,"Beziehung, Verschiedenes",3,54
+11. Brüderchen und Schwesterchen .,"Fabelwesen, Orte",3,15
+11. Brüderchen und Schwesterchen .,"Fabelwesen, Weiblich",3,16
+11. Brüderchen und Schwesterchen .,"Orte, Körperteil",3,34
+11. Brüderchen und Schwesterchen .,"Orte, Verschiedenes",2,33
+11. Brüderchen und Schwesterchen .,"Männlich, Körperteil",2,30
+11. Brüderchen und Schwesterchen .,"Adel, Körperteil",2,61
+11. Brüderchen und Schwesterchen .,"Körperteil, Verschiedenes",2,23
+11. Brüderchen und Schwesterchen .,"Adel, Orte",2,61
+11. Brüderchen und Schwesterchen .,"Adel, Fabelwesen",2,6
+11. Brüderchen und Schwesterchen .,"Fabelwesen, Körperteil",1,9
+11. Brüderchen und Schwesterchen .,"Fabelwesen, Verschiedenes",1,4
+11. Brüderchen und Schwesterchen .,"Männlich, Orte",1,41
+11. Brüderchen und Schwesterchen .,"Männlich, Verschiedenes",1,32
+12. Rapunzel .,"Weiblich, Beziehung",4,176
+12. Rapunzel .,"Weiblich, Körperteil",3,41
+12. Rapunzel .,"Weiblich, Orte",3,65
+12. Rapunzel .,"Orte, Verschiedenes",2,33
+12. Rapunzel .,"Adel, Orte",2,61
+12. Rapunzel .,"Orte, Beziehung",2,82
+12. Rapunzel .,"Orte, Körperteil",2,34
+12. Rapunzel .,"Adel, Körperteil",2,61
+12. Rapunzel .,"Adel, Weiblich",1,105
+12. Rapunzel .,"Adel, Beziehung",1,123
+12. Rapunzel .,"Adel, Verschiedenes",1,67
+12. Rapunzel .,"Beziehung, Körperteil",1,53
+13. Die drei Männlein im Walde .,"Weiblich, Beziehung",11,176
+13. Die drei Männlein im Walde .,"Adel, Beziehung",5,123
+13. Die drei Männlein im Walde .,"Adel, Weiblich",4,105
+13. Die drei Männlein im Walde .,"Weiblich, Nahrung",4,13
+13. Die drei Männlein im Walde .,"Beziehung, Nahrung",3,9
+13. Die drei Männlein im Walde .,"Orte, Nahrung",3,16
+13. Die drei Männlein im Walde .,"Beziehung, Körperteil",2,53
+13. Die drei Männlein im Walde .,"Adel, Körperteil",2,61
+13. Die drei Männlein im Walde .,"Adel, Verschiedenes",1,67
+13. Die drei Männlein im Walde .,"Wertgegenstände, Nahrung",1,5
+13. Die drei Männlein im Walde .,"Nahrung, Körperteil",1,6
+13. Die drei Männlein im Walde .,"Weiblich, Orte",1,65
+13. Die drei Männlein im Walde .,"Weiblich, Körperteil",1,41
+13. Die drei Männlein im Walde .,"Weiblich, Verschiedenes",1,35
+13. Die drei Männlein im Walde .,"Beziehung, Verschiedenes",1,54
+13. Die drei Männlein im Walde .,"Wertgegenstände, Orte",1,15
+14. Die drei Spinnerinnen .,"Adel, Weiblich",3,105
+14. Die drei Spinnerinnen .,"Adel, Beziehung",2,123
+14. Die drei Spinnerinnen .,"Adel, Körperteil",2,61
+14. Die drei Spinnerinnen .,"Weiblich, Beziehung",2,176
+14. Die drei Spinnerinnen .,"Weiblich, Körperteil",1,41
+14. Die drei Spinnerinnen .,"Beziehung, Körperteil",1,53
+14. Die drei Spinnerinnen .,"Körperteil, Verschiedenes",1,23
+14. Die drei Spinnerinnen .,"Weiblich, Nahrung",1,13
+14. Die drei Spinnerinnen .,"Beziehung, Nahrung",1,9
+14. Die drei Spinnerinnen .,"Adel, Nahrung",1,10
+15. Hänsel und Grethel .,"Weiblich, Beziehung",16,176
+15. Hänsel und Grethel .,"Orte, Beziehung",12,82
+15. Hänsel und Grethel .,"Weiblich, Orte",11,65
+15. Hänsel und Grethel .,"Beziehung, Körperteil",6,53
+15. Hänsel und Grethel .,"Weiblich, Körperteil",4,41
+15. Hänsel und Grethel .,"Orte, Körperteil",4,34
+15. Hänsel und Grethel .,"Weiblich, Verschiedenes",2,35
+15. Hänsel und Grethel .,"Beziehung, Verschiedenes",1,54
+15. Hänsel und Grethel .,"Männlich, Beziehung",1,185
+15. Hänsel und Grethel .,"Orte, Verschiedenes",1,33
+15. Hänsel und Grethel .,"Körperteil, Verschiedenes",1,23
+15. Hänsel und Grethel .,"Fabelwesen, Beziehung",1,14
+15. Hänsel und Grethel .,"Tier, Weiblich",1,14
+15. Hänsel und Grethel .,"Männlich, Gewerbebezeichnung",1,36
+15. Hänsel und Grethel .,"Gewerbebezeichnung, Beziehung",1,37
+15. Hänsel und Grethel .,"Fabelwesen, Wertgegenstände",1,7
+16. Die drei Schlangenblätter .,"Weiblich, Beziehung",2,176
+16. Die drei Schlangenblätter .,"Adel, Verschiedenes",2,67
+16. Die drei Schlangenblätter .,"Adel, Weiblich",1,105
+16. Die drei Schlangenblätter .,"Adel, Beziehung",1,123
+16. Die drei Schlangenblätter .,"Adel, Körperteil",1,61
+16. Die drei Schlangenblätter .,"Weiblich, Körperteil",1,41
+16. Die drei Schlangenblätter .,"Adel, Nahrung",1,10
+16. Die drei Schlangenblätter .,"Männlich, Gewerbebezeichnung",1,36
+16. Die drei Schlangenblätter .,"Gewerbebezeichnung, Verschiedenes",1,12
+16. Die drei Schlangenblätter .,"Männlich, Verschiedenes",1,32
+16. Die drei Schlangenblätter .,"Orte, Verschiedenes",1,33
+16. Die drei Schlangenblätter .,"Adel, Gewerbebezeichnung",1,59
+16. Die drei Schlangenblätter .,"Männlich, Orte",1,41
+16. Die drei Schlangenblätter .,"Adel, Männlich",1,72
+16. Die drei Schlangenblätter .,"Adel, Orte",1,61
+17. Die weiße Schlange .,"Adel, Gewerbebezeichnung",4,59
+17. Die weiße Schlange .,"Adel, Männlich",4,72
+17. Die weiße Schlange .,"Tier, Männlich",2,39
+17. Die weiße Schlange .,"Tier, Verschiedenes",1,11
+17. Die weiße Schlange .,"Adel, Tier",1,16
+17. Die weiße Schlange .,"Tier, Orte",1,21
+17. Die weiße Schlange .,"Gewerbebezeichnung, Körperteil",1,19
+17. Die weiße Schlange .,"Adel, Körperteil",1,61
+17. Die weiße Schlange .,"Männlich, Körperteil",1,30
+17. Die weiße Schlange .,"Männlich, Orte",1,41
+17. Die weiße Schlange .,"Gewerbebezeichnung, Verschiedenes",1,12
+17. Die weiße Schlange .,"Gewerbebezeichnung, Orte",1,14
+17. Die weiße Schlange .,"Körperteil, Verschiedenes",1,23
+17. Die weiße Schlange .,"Adel, Orte",1,61
+"18. Strohhalm , Kohle und Bohne .","Nahrung, Verschiedenes",2,6
+"18. Strohhalm , Kohle und Bohne .","Weiblich, Nahrung",1,13
+"18. Strohhalm , Kohle und Bohne .","Beziehung, Nahrung",1,9
+"18. Strohhalm , Kohle und Bohne .","Männlich, Beziehung",1,185
+"18. Strohhalm , Kohle und Bohne .","Männlich, Nahrung",1,10
+"18. Strohhalm , Kohle und Bohne .","Beziehung, Verschiedenes",1,54
+"18. Strohhalm , Kohle und Bohne .","Männlich, Verschiedenes",1,32
+19. Von dem Fischer un syner Fru .,"Adel, Weiblich",9,105
+19. Von dem Fischer un syner Fru .,"Weiblich, Orte",7,65
+19. Von dem Fischer un syner Fru .,"Weiblich, Körperteil",4,41
+19. Von dem Fischer un syner Fru .,"Weiblich, Wertgegenstände",3,20
+19. Von dem Fischer un syner Fru .,"Wertgegenstände, Körperteil",2,14
+19. Von dem Fischer un syner Fru .,"Adel, Wertgegenstände",1,28
+19. Von dem Fischer un syner Fru .,"Weiblich, Verschiedenes",1,35
+19. Von dem Fischer un syner Fru .,"Fabelwesen, Weiblich",1,16
+19. Von dem Fischer un syner Fru .,"Fabelwesen, Wertgegenstände",1,7
+19. Von dem Fischer un syner Fru .,"Adel, Verschiedenes",1,67
+19. Von dem Fischer un syner Fru .,"Fabelwesen, Körperteil",1,9
+20. Das tapfere Schneiderlein .,"Fabelwesen, Orte",5,15
+20. Das tapfere Schneiderlein .,"Weiblich, Beziehung",3,176
+20. Das tapfere Schneiderlein .,"Adel, Männlich",3,72
+20. Das tapfere Schneiderlein .,"Adel, Gewerbebezeichnung",2,59
+20. Das tapfere Schneiderlein .,"Fabelwesen, Körperteil",2,9
+20. Das tapfere Schneiderlein .,"Adel, Weiblich",2,105
+20. Das tapfere Schneiderlein .,"Adel, Beziehung",1,123
+20. Das tapfere Schneiderlein .,"Adel, Verschiedenes",1,67
+20. Das tapfere Schneiderlein .,"Orte, Körperteil",1,34
+20. Das tapfere Schneiderlein .,"Männlich, Orte",1,41
+20. Das tapfere Schneiderlein .,"Weiblich, Orte",1,65
+20. Das tapfere Schneiderlein .,"Weiblich, Verschiedenes",1,35
+20. Das tapfere Schneiderlein .,"Adel, Orte",1,61
+20. Das tapfere Schneiderlein .,"Adel, Fabelwesen",1,6
+20. Das tapfere Schneiderlein .,"Fabelwesen, Beziehung",1,14
+20. Das tapfere Schneiderlein .,"Fabelwesen, Weiblich",1,16
+20. Das tapfere Schneiderlein .,"Männlich, Gewerbebezeichnung",1,36
+20. Das tapfere Schneiderlein .,"Gewerbebezeichnung, Orte",1,14
+20. Das tapfere Schneiderlein .,"Weiblich, Gewerbebezeichnung",1,21
+20. Das tapfere Schneiderlein .,"Männlich, Verschiedenes",1,32
+20. Das tapfere Schneiderlein .,"Männlich, Weiblich",1,33
+21. Aschenbuttel .,"Adel, Körperteil",6,61
+21. Aschenbuttel .,"Tier, Verschiedenes",4,11
+21. Aschenbuttel .,"Weiblich, Beziehung",4,176
+21. Aschenbuttel .,"Eigenname, Verschiedenes",3,11
+21. Aschenbuttel .,"Adel, Eigenname",2,31
+21. Aschenbuttel .,"Weiblich, Körperteil",1,41
+21. Aschenbuttel .,"Beziehung, Körperteil",1,53
+21. Aschenbuttel .,"Eigenname, Beziehung",1,12
+21. Aschenbuttel .,"Weiblich, Eigenname",1,21
+21. Aschenbuttel .,"Wertgegenstände, Eigenname",1,4
+22. Das Räthsel .,"Adel, Gewerbebezeichnung",6,59
+22. Das Räthsel .,"Männlich, Gewerbebezeichnung",3,36
+22. Das Räthsel .,"Tier, Gewerbebezeichnung",3,10
+22. Das Räthsel .,"Gewerbebezeichnung, Beziehung",2,37
+22. Das Räthsel .,"Fabelwesen, Gewerbebezeichnung",2,3
+22. Das Räthsel .,"Adel, Männlich",2,72
+22. Das Räthsel .,"Weiblich, Beziehung",2,176
+22. Das Räthsel .,"Adel, Beziehung",1,123
+22. Das Räthsel .,"Gewerbebezeichnung, Orte",1,14
+22. Das Räthsel .,"Weiblich, Gewerbebezeichnung",1,21
+22. Das Räthsel .,"Tier, Fabelwesen",1,2
+22. Das Räthsel .,"Gewerbebezeichnung, Wertgegenstände",1,9
+22. Das Räthsel .,"Adel, Wertgegenstände",1,28
+22. Das Räthsel .,"Männlich, Wertgegenstände",1,32
+22. Das Räthsel .,"Adel, Orte",1,61
+22. Das Räthsel .,"Adel, Fabelwesen",1,6
+24. Frau Holle .,"Weiblich, Eigenname",13,21
+24. Frau Holle .,"Weiblich, Beziehung",4,176
+24. Frau Holle .,"Weiblich, Orte",2,65
+24. Frau Holle .,"Wertgegenstände, Eigenname",2,4
+24. Frau Holle .,"Orte, Eigenname",2,9
+24. Frau Holle .,"Weiblich, Wertgegenstände",2,20
+24. Frau Holle .,"Eigenname, Körperteil",1,12
+24. Frau Holle .,"Orte, Körperteil",1,34
+24. Frau Holle .,"Weiblich, Körperteil",1,41
+24. Frau Holle .,"Eigenname, Beziehung",1,12
+25. Die sieben Raben .,"Männlich, Beziehung",7,185
+25. Die sieben Raben .,"Tier, Männlich",3,39
+25. Die sieben Raben .,"Weiblich, Beziehung",3,176
+25. Die sieben Raben .,"Tier, Beziehung",2,11
+25. Die sieben Raben .,"Orte, Beziehung",2,82
+25. Die sieben Raben .,"Männlich, Orte",1,41
+25. Die sieben Raben .,"Weiblich, Orte",1,65
+25. Die sieben Raben .,"Männlich, Verschiedenes",1,32
+25. Die sieben Raben .,"Tier, Weiblich",1,14
+25. Die sieben Raben .,"Männlich, Weiblich",1,33
+25. Die sieben Raben .,"Beziehung, Verschiedenes",1,54
+26. Rothkäppchen .,"Orte, Eigenname",2,9
+26. Rothkäppchen .,"Orte, Nahrung",2,16
+26. Rothkäppchen .,"Eigenname, Verschiedenes",1,11
+26. Rothkäppchen .,"Eigenname, Körperteil",1,12
+26. Rothkäppchen .,"Eigenname, Nahrung",1,3
+26. Rothkäppchen .,"Eigenname, Beziehung",1,12
+26. Rothkäppchen .,"Orte, Verschiedenes",1,33
+27. Die Bremer Stadtmusikanten .,"Gewerbebezeichnung, Orte",3,14
+27. Die Bremer Stadtmusikanten .,"Männlich, Gewerbebezeichnung",2,36
+27. Die Bremer Stadtmusikanten .,"Männlich, Orte",2,41
+27. Die Bremer Stadtmusikanten .,"Fabelwesen, Körperteil",1,9
+27. Die Bremer Stadtmusikanten .,"Weiblich, Beziehung",1,176
+27. Die Bremer Stadtmusikanten .,"Weiblich, Verschiedenes",1,35
+28. Der singende Knochen .,"Männlich, Beziehung",6,185
+28. Der singende Knochen .,"Adel, Orte",5,61
+28. Der singende Knochen .,"Adel, Beziehung",3,123
+28. Der singende Knochen .,"Adel, Weiblich",2,105
+28. Der singende Knochen .,"Orte, Beziehung",2,82
+28. Der singende Knochen .,"Adel, Männlich",2,72
+28. Der singende Knochen .,"Weiblich, Beziehung",2,176
+28. Der singende Knochen .,"Beziehung, Nahrung",1,9
+28. Der singende Knochen .,"Orte, Nahrung",1,16
+28. Der singende Knochen .,"Orte, Körperteil",1,34
+28. Der singende Knochen .,"Orte, Verschiedenes",1,33
+28. Der singende Knochen .,"Männlich, Orte",1,41
+28. Der singende Knochen .,"Weiblich, Orte",1,65
+28. Der singende Knochen .,"Männlich, Nahrung",1,10
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Weiblich",9,105
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Beziehung",7,123
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Beziehung",6,176
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Verschiedenes",5,67
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Orte",4,65
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Verschiedenes",4,35
+29. Der Teufel mit den drei goldenen Haaren .,"Beziehung, Verschiedenes",3,54
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Wertgegenstände",3,28
+29. Der Teufel mit den drei goldenen Haaren .,"Orte, Beziehung",3,82
+29. Der Teufel mit den drei goldenen Haaren .,"Orte, Nahrung",3,16
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Wertgegenstände",2,20
+29. Der Teufel mit den drei goldenen Haaren .,"Wertgegenstände, Beziehung",2,31
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Orte",2,61
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Männlich",2,72
+29. Der Teufel mit den drei goldenen Haaren .,"Wertgegenstände, Verschiedenes",2,8
+29. Der Teufel mit den drei goldenen Haaren .,"Männlich, Verschiedenes",1,32
+29. Der Teufel mit den drei goldenen Haaren .,"Männlich, Weiblich",1,33
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Nahrung",1,13
+29. Der Teufel mit den drei goldenen Haaren .,"Wertgegenstände, Nahrung",1,5
+29. Der Teufel mit den drei goldenen Haaren .,"Adel, Körperteil",1,61
+29. Der Teufel mit den drei goldenen Haaren .,"Weiblich, Körperteil",1,41
+29. Der Teufel mit den drei goldenen Haaren .,"Beziehung, Körperteil",1,53
+29. Der Teufel mit den drei goldenen Haaren .,"Orte, Verschiedenes",1,33
+29. Der Teufel mit den drei goldenen Haaren .,"Wertgegenstände, Körperteil",1,14
+29. Der Teufel mit den drei goldenen Haaren .,"Körperteil, Verschiedenes",1,23
+29. Der Teufel mit den drei goldenen Haaren .,"Wertgegenstände, Orte",1,15
+31. Das Mädchen ohne Hände .,"Adel, Orte",8,61
+31. Das Mädchen ohne Hände .,"Weiblich, Beziehung",8,176
+31. Das Mädchen ohne Hände .,"Beziehung, Körperteil",6,53
+31. Das Mädchen ohne Hände .,"Adel, Weiblich",6,105
+31. Das Mädchen ohne Hände .,"Adel, Beziehung",6,123
+31. Das Mädchen ohne Hände .,"Weiblich, Orte",5,65
+31. Das Mädchen ohne Hände .,"Weiblich, Verschiedenes",4,35
+31. Das Mädchen ohne Hände .,"Beziehung, Verschiedenes",4,54
+31. Das Mädchen ohne Hände .,"Adel, Verschiedenes",4,67
+31. Das Mädchen ohne Hände .,"Orte, Beziehung",4,82
+31. Das Mädchen ohne Hände .,"Adel, Körperteil",3,61
+31. Das Mädchen ohne Hände .,"Weiblich, Körperteil",3,41
+31. Das Mädchen ohne Hände .,"Orte, Körperteil",3,34
+31. Das Mädchen ohne Hände .,"Orte, Verschiedenes",2,33
+31. Das Mädchen ohne Hände .,"Männlich, Orte",2,41
+31. Das Mädchen ohne Hände .,"Adel, Männlich",2,72
+31. Das Mädchen ohne Hände .,"Gewerbebezeichnung, Körperteil",2,19
+31. Das Mädchen ohne Hände .,"Gewerbebezeichnung, Beziehung",2,37
+31. Das Mädchen ohne Hände .,"Gewerbebezeichnung, Orte",2,14
+31. Das Mädchen ohne Hände .,"Weiblich, Gewerbebezeichnung",1,21
+31. Das Mädchen ohne Hände .,"Männlich, Weiblich",1,33
+31. Das Mädchen ohne Hände .,"Männlich, Körperteil",1,30
+31. Das Mädchen ohne Hände .,"Körperteil, Verschiedenes",1,23
+33. Die drei Sprachen .,"Männlich, Verschiedenes",4,32
+33. Die drei Sprachen .,"Adel, Männlich",3,72
+33. Die drei Sprachen .,"Orte, Verschiedenes",1,33
+33. Die drei Sprachen .,"Männlich, Orte",1,41
+34. Die kluge Else .,"Beziehung, Verschiedenes",6,54
+34. Die kluge Else .,"Weiblich, Beziehung",3,176
+34. Die kluge Else .,"Weiblich, Orte",2,65
+34. Die kluge Else .,"Gewerbebezeichnung, Beziehung",2,37
+34. Die kluge Else .,"Gewerbebezeichnung, Verschiedenes",2,12
+34. Die kluge Else .,"Weiblich, Verschiedenes",2,35
+34. Die kluge Else .,"Beziehung, Körperteil",1,53
+34. Die kluge Else .,"Weiblich, Wertgegenstände",1,20
+34. Die kluge Else .,"Körperteil, Verschiedenes",1,23
+34. Die kluge Else .,"Wertgegenstände, Orte",1,15
+34. Die kluge Else .,"Orte, Beziehung",1,82
+34. Die kluge Else .,"Weiblich, Gewerbebezeichnung",1,21
+34. Die kluge Else .,"Orte, Verschiedenes",1,33
+35. Der Schneider im Himmel .,"Männlich, Weiblich",1,33
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Gewerbebezeichnung, Beziehung",8,37
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Beziehung",8,185
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Gewerbebezeichnung",5,36
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Verschiedenes",3,32
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Wertgegenstände",2,32
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Gewerbebezeichnung, Körperteil",2,19
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Gewerbebezeichnung, Wertgegenstände",2,9
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Nahrung, Körperteil",2,6
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Orte, Körperteil",2,34
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Orte",2,41
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Orte, Beziehung",2,82
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Wertgegenstände, Orte",1,15
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Tier, Männlich",1,39
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Tier, Körperteil",1,25
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Tier, Beziehung",1,11
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Beziehung, Körperteil",1,53
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Beziehung, Verschiedenes",1,54
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Orte, Verschiedenes",1,33
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Männlich, Körperteil",1,30
+"36. Tischchen deck dich , Goldesel , und Knüppel aus dem Sack .","Gewerbebezeichnung, Orte",1,14
+37. Daumesdick .,"Weiblich, Beziehung",2,176
+37. Daumesdick .,"Männlich, Gewerbebezeichnung",1,36
+37. Daumesdick .,"Körperteil, Verschiedenes",1,23
+37. Daumesdick .,"Wertgegenstände, Orte",1,15
+37. Daumesdick .,"Gewerbebezeichnung, Körperteil",1,19
+37. Daumesdick .,"Männlich, Verschiedenes",1,32
+37. Daumesdick .,"Orte, Körperteil",1,34
+37. Daumesdick .,"Orte, Verschiedenes",1,33
+37. Daumesdick .,"Männlich, Orte",1,41
+37. Daumesdick .,"Gewerbebezeichnung, Wertgegenstände",1,9
+37. Daumesdick .,"Weiblich, Körperteil",1,41
+37. Daumesdick .,"Beziehung, Körperteil",1,53
+38. Die Hochzeit der Frau Füchsin .,"Tier, Männlich",10,39
+38. Die Hochzeit der Frau Füchsin .,"Tier, Weiblich",5,14
+38. Die Hochzeit der Frau Füchsin .,"Männlich, Weiblich",4,33
+38. Die Hochzeit der Frau Füchsin .,"Tier, Körperteil",3,25
+38. Die Hochzeit der Frau Füchsin .,"Männlich, Beziehung",2,185
+38. Die Hochzeit der Frau Füchsin .,"Weiblich, Körperteil",2,41
+38. Die Hochzeit der Frau Füchsin .,"Männlich, Körperteil",1,30
+39. Die Wichtelmänner .,"Fabelwesen, Beziehung",2,14
+39. Die Wichtelmänner .,"Weiblich, Körperteil",1,41
+40. Der Räuberbräutigam .,"Weiblich, Beziehung",2,176
+40. Der Räuberbräutigam .,"Orte, Verschiedenes",2,33
+40. Der Räuberbräutigam .,"Nahrung, Körperteil",2,6
+40. Der Räuberbräutigam .,"Gewerbebezeichnung, Beziehung",2,37
+40. Der Räuberbräutigam .,"Weiblich, Gewerbebezeichnung",2,21
+40. Der Räuberbräutigam .,"Weiblich, Nahrung",1,13
+40. Der Räuberbräutigam .,"Weiblich, Körperteil",1,41
+40. Der Räuberbräutigam .,"Beziehung, Verschiedenes",1,54
+40. Der Räuberbräutigam .,"Orte, Beziehung",1,82
+41. Herr Korbes .,"Körperteil, Verschiedenes",1,23
+41. Herr Korbes .,"Männlich, Körperteil",1,30
+41. Herr Korbes .,"Männlich, Verschiedenes",1,32
+42. Der Herr Gevatter .,"Männlich, Verschiedenes",1,32
+42. Der Herr Gevatter .,"Männlich, Gewerbebezeichnung",1,36
+42. Der Herr Gevatter .,"Adel, Beziehung",1,123
+42. Der Herr Gevatter .,"Adel, Körperteil",1,61
+42. Der Herr Gevatter .,"Orte, Beziehung",1,82
+42. Der Herr Gevatter .,"Beziehung, Körperteil",1,53
+42. Der Herr Gevatter .,"Wertgegenstände, Körperteil",1,14
+43. Frau Trude .,"Weiblich, Eigenname",3,21
+43. Frau Trude .,"Eigenname, Beziehung",1,12
+43. Frau Trude .,"Fabelwesen, Weiblich",1,16
+43. Frau Trude .,"Weiblich, Beziehung",1,176
+43. Frau Trude .,"Fabelwesen, Eigenname",1,1
+44. Der Gevatter Tod .,"Beziehung, Verschiedenes",2,54
+44. Der Gevatter Tod .,"Weiblich, Beziehung",1,176
+44. Der Gevatter Tod .,"Beziehung, Körperteil",1,53
+44. Der Gevatter Tod .,"Adel, Weiblich",1,105
+44. Der Gevatter Tod .,"Adel, Beziehung",1,123
+44. Der Gevatter Tod .,"Orte, Körperteil",1,34
+44. Der Gevatter Tod .,"Männlich, Orte",1,41
+44. Der Gevatter Tod .,"Wertgegenstände, Beziehung",1,31
+44. Der Gevatter Tod .,"Wertgegenstände, Orte",1,15
+44. Der Gevatter Tod .,"Orte, Beziehung",1,82
+45. Daumerlings Wanderschaft .,"Fabelwesen, Männlich",15,18
+45. Daumerlings Wanderschaft .,"Männlich, Wertgegenstände",4,32
+45. Daumerlings Wanderschaft .,"Fabelwesen, Wertgegenstände",4,7
+45. Daumerlings Wanderschaft .,"Fabelwesen, Weiblich",2,16
+45. Daumerlings Wanderschaft .,"Männlich, Orte",2,41
+45. Daumerlings Wanderschaft .,"Männlich, Weiblich",2,33
+45. Daumerlings Wanderschaft .,"Tier, Männlich",1,39
+45. Daumerlings Wanderschaft .,"Männlich, Verschiedenes",1,32
+45. Daumerlings Wanderschaft .,"Wertgegenstände, Verschiedenes",1,8
+45. Daumerlings Wanderschaft .,"Tier, Körperteil",1,25
+45. Daumerlings Wanderschaft .,"Tier, Orte",1,21
+45. Daumerlings Wanderschaft .,"Tier, Beziehung",1,11
+45. Daumerlings Wanderschaft .,"Tier, Fabelwesen",1,2
+45. Daumerlings Wanderschaft .,"Männlich, Körperteil",1,30
+45. Daumerlings Wanderschaft .,"Fabelwesen, Orte",1,15
+45. Daumerlings Wanderschaft .,"Fabelwesen, Körperteil",1,9
+45. Daumerlings Wanderschaft .,"Fabelwesen, Verschiedenes",1,4
+45. Daumerlings Wanderschaft .,"Adel, Wertgegenstände",1,28
+46. Fitchers Vogel .,"Männlich, Beziehung",1,185
+46. Fitchers Vogel .,"Weiblich, Beziehung",1,176
+46. Fitchers Vogel .,"Körperteil, Verschiedenes",1,23
+46. Fitchers Vogel .,"Fabelwesen, Wertgegenstände",1,7
+47. Von dem Machandelboom .,"Weiblich, Beziehung",7,176
+47. Von dem Machandelboom .,"Weiblich, Verschiedenes",5,35
+47. Von dem Machandelboom .,"Beziehung, Verschiedenes",3,54
+47. Von dem Machandelboom .,"Körperteil, Verschiedenes",2,23
+47. Von dem Machandelboom .,"Weiblich, Orte",1,65
+47. Von dem Machandelboom .,"Weiblich, Wertgegenstände",1,20
+47. Von dem Machandelboom .,"Wertgegenstände, Beziehung",1,31
+48. Der alte Sultan .,"Orte, Beziehung",2,82
+48. Der alte Sultan .,"Adel, Weiblich",2,105
+48. Der alte Sultan .,"Weiblich, Beziehung",2,176
+48. Der alte Sultan .,"Weiblich, Verschiedenes",1,35
+48. Der alte Sultan .,"Adel, Orte",1,61
+48. Der alte Sultan .,"Männlich, Weiblich",1,33
+48. Der alte Sultan .,"Männlich, Beziehung",1,185
+48. Der alte Sultan .,"Adel, Beziehung",1,123
+48. Der alte Sultan .,"Adel, Körperteil",1,61
+48. Der alte Sultan .,"Adel, Verschiedenes",1,67
+48. Der alte Sultan .,"Weiblich, Orte",1,65
+49. Die sechs Schwäne .,"Männlich, Beziehung",11,185
+49. Die sechs Schwäne .,"Adel, Beziehung",9,123
+49. Die sechs Schwäne .,"Adel, Orte",8,61
+49. Die sechs Schwäne .,"Orte, Beziehung",6,82
+49. Die sechs Schwäne .,"Adel, Verschiedenes",4,67
+49. Die sechs Schwäne .,"Weiblich, Beziehung",4,176
+49. Die sechs Schwäne .,"Adel, Männlich",4,72
+49. Die sechs Schwäne .,"Männlich, Orte",3,41
+49. Die sechs Schwäne .,"Beziehung, Verschiedenes",3,54
+49. Die sechs Schwäne .,"Orte, Verschiedenes",2,33
+49. Die sechs Schwäne .,"Männlich, Verschiedenes",2,32
+49. Die sechs Schwäne .,"Männlich, Weiblich",2,33
+49. Die sechs Schwäne .,"Adel, Weiblich",2,105
+49. Die sechs Schwäne .,"Adel, Körperteil",2,61
+49. Die sechs Schwäne .,"Weiblich, Orte",2,65
+49. Die sechs Schwäne .,"Orte, Körperteil",1,34
+49. Die sechs Schwäne .,"Gewerbebezeichnung, Wertgegenstände",1,9
+49. Die sechs Schwäne .,"Weiblich, Körperteil",1,41
+49. Die sechs Schwäne .,"Beziehung, Körperteil",1,53
+49. Die sechs Schwäne .,"Fabelwesen, Weiblich",1,16
+50. Dornröschen .,"Adel, Verschiedenes",6,67
+50. Dornröschen .,"Adel, Beziehung",3,123
+50. Dornröschen .,"Weiblich, Beziehung",3,176
+50. Dornröschen .,"Beziehung, Verschiedenes",2,54
+50. Dornröschen .,"Weiblich, Verschiedenes",1,35
+50. Dornröschen .,"Weiblich, Orte",1,65
+50. Dornröschen .,"Gewerbebezeichnung, Körperteil",1,19
+50. Dornröschen .,"Adel, Orte",1,61
+50. Dornröschen .,"Orte, Beziehung",1,82
+50. Dornröschen .,"Orte, Verschiedenes",1,33
+50. Dornröschen .,"Männlich, Körperteil",1,30
+50. Dornröschen .,"Adel, Weiblich",1,105
+50. Dornröschen .,"Gewerbebezeichnung, Orte",1,14
+51. Fundevogel .,"Gewerbebezeichnung, Beziehung",5,37
+51. Fundevogel .,"Eigenname, Beziehung",3,12
+51. Fundevogel .,"Orte, Beziehung",2,82
+51. Fundevogel .,"Gewerbebezeichnung, Eigenname",2,6
+51. Fundevogel .,"Orte, Eigenname",1,9
+51. Fundevogel .,"Gewerbebezeichnung, Orte",1,14
+52. König Drosselbart .,"Adel, Weiblich",7,105
+52. König Drosselbart .,"Adel, Beziehung",4,123
+52. König Drosselbart .,"Weiblich, Beziehung",4,176
+52. König Drosselbart .,"Adel, Körperteil",3,61
+52. König Drosselbart .,"Adel, Gewerbebezeichnung",3,59
+52. König Drosselbart .,"Weiblich, Körperteil",1,41
+52. König Drosselbart .,"Weiblich, Wertgegenstände",1,20
+52. König Drosselbart .,"Gewerbebezeichnung, Körperteil",1,19
+52. König Drosselbart .,"Adel, Orte",1,61
+52. König Drosselbart .,"Gewerbebezeichnung, Beziehung",1,37
+52. König Drosselbart .,"Weiblich, Gewerbebezeichnung",1,21
+53. Sneewittchen .,"Adel, Eigenname",7,31
+53. Sneewittchen .,"Eigenname, Körperteil",5,12
+53. Sneewittchen .,"Orte, Beziehung",3,82
+53. Sneewittchen .,"Orte, Eigenname",3,9
+53. Sneewittchen .,"Weiblich, Eigenname",3,21
+53. Sneewittchen .,"Eigenname, Beziehung",2,12
+53. Sneewittchen .,"Adel, Orte",2,61
+53. Sneewittchen .,"Adel, Verschiedenes",2,67
+53. Sneewittchen .,"Eigenname, Verschiedenes",2,11
+53. Sneewittchen .,"Gewerbebezeichnung, Eigenname",1,6
+53. Sneewittchen .,"Eigenname, Nahrung",1,3
+53. Sneewittchen .,"Beziehung, Nahrung",1,9
+53. Sneewittchen .,"Weiblich, Gewerbebezeichnung",1,21
+53. Sneewittchen .,"Wertgegenstände, Eigenname",1,4
+53. Sneewittchen .,"Orte, Körperteil",1,34
+53. Sneewittchen .,"Adel, Gewerbebezeichnung",1,59
+53. Sneewittchen .,"Beziehung, Körperteil",1,53
+53. Sneewittchen .,"Adel, Beziehung",1,123
+53. Sneewittchen .,"Tier, Eigenname",1,4
+53. Sneewittchen .,"Wertgegenstände, Orte",1,15
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Männlich, Beziehung",8,185
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Wertgegenstände, Beziehung",3,31
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Männlich, Wertgegenstände",3,32
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Adel, Beziehung",2,123
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Adel, Weiblich",1,105
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Adel, Körperteil",1,61
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Weiblich, Beziehung",1,176
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Wertgegenstände, Orte",1,15
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Orte, Beziehung",1,82
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Orte, Körperteil",1,34
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Adel, Männlich",1,72
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Männlich, Verschiedenes",1,32
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Beziehung, Körperteil",1,53
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Beziehung, Verschiedenes",1,54
+"54. Der Ranzen , das Hütlein und das Hörnlein .","Adel, Wertgegenstände",1,28
+55. Rumpelstilzchen .,"Weiblich, Beziehung",8,176
+55. Rumpelstilzchen .,"Adel, Beziehung",7,123
+55. Rumpelstilzchen .,"Adel, Weiblich",6,105
+55. Rumpelstilzchen .,"Adel, Wertgegenstände",5,28
+55. Rumpelstilzchen .,"Weiblich, Wertgegenstände",4,20
+55. Rumpelstilzchen .,"Wertgegenstände, Beziehung",4,31
+55. Rumpelstilzchen .,"Orte, Beziehung",3,82
+55. Rumpelstilzchen .,"Adel, Orte",2,61
+55. Rumpelstilzchen .,"Gewerbebezeichnung, Beziehung",2,37
+55. Rumpelstilzchen .,"Weiblich, Gewerbebezeichnung",2,21
+55. Rumpelstilzchen .,"Beziehung, Verschiedenes",2,54
+55. Rumpelstilzchen .,"Wertgegenstände, Orte",1,15
+55. Rumpelstilzchen .,"Adel, Körperteil",1,61
+55. Rumpelstilzchen .,"Weiblich, Orte",1,65
+55. Rumpelstilzchen .,"Wertgegenstände, Körperteil",1,14
+55. Rumpelstilzchen .,"Gewerbebezeichnung, Wertgegenstände",1,9
+55. Rumpelstilzchen .,"Orte, Verschiedenes",1,33
+55. Rumpelstilzchen .,"Adel, Gewerbebezeichnung",1,59
+56. Der Liebste Roland .,"Weiblich, Beziehung",2,176
+56. Der Liebste Roland .,"Fabelwesen, Beziehung",2,14
+56. Der Liebste Roland .,"Fabelwesen, Weiblich",2,16
+56. Der Liebste Roland .,"Beziehung, Körperteil",1,53
+56. Der Liebste Roland .,"Fabelwesen, Orte",1,15
+57. Der goldene Vogel .,"Männlich, Beziehung",13,185
+57. Der goldene Vogel .,"Adel, Tier",10,16
+57. Der goldene Vogel .,"Tier, Körperteil",9,25
+57. Der goldene Vogel .,"Tier, Orte",8,21
+57. Der goldene Vogel .,"Adel, Männlich",8,72
+57. Der goldene Vogel .,"Tier, Männlich",7,39
+57. Der goldene Vogel .,"Adel, Körperteil",7,61
+57. Der goldene Vogel .,"Adel, Beziehung",6,123
+57. Der goldene Vogel .,"Adel, Orte",4,61
+57. Der goldene Vogel .,"Orte, Beziehung",3,82
+57. Der goldene Vogel .,"Tier, Beziehung",3,11
+57. Der goldene Vogel .,"Orte, Körperteil",3,34
+57. Der goldene Vogel .,"Männlich, Körperteil",3,30
+57. Der goldene Vogel .,"Männlich, Orte",3,41
+57. Der goldene Vogel .,"Adel, Weiblich",2,105
+57. Der goldene Vogel .,"Adel, Verschiedenes",2,67
+57. Der goldene Vogel .,"Weiblich, Beziehung",2,176
+57. Der goldene Vogel .,"Männlich, Weiblich",1,33
+58. Der Hund und der Sperling .,"Männlich, Beziehung",2,185
+58. Der Hund und der Sperling .,"Weiblich, Nahrung",1,13
+59. Der Frieder und das Catherlieschen .,"Weiblich, Wertgegenstände",2,20
+59. Der Frieder und das Catherlieschen .,"Gewerbebezeichnung, Körperteil",2,19
+59. Der Frieder und das Catherlieschen .,"Wertgegenstände, Körperteil",1,14
+59. Der Frieder und das Catherlieschen .,"Männlich, Gewerbebezeichnung",1,36
+59. Der Frieder und das Catherlieschen .,"Gewerbebezeichnung, Orte",1,14
+59. Der Frieder und das Catherlieschen .,"Nahrung, Verschiedenes",1,6
+59. Der Frieder und das Catherlieschen .,"Männlich, Körperteil",1,30
+60. Die zwei Brüder .,"Männlich, Beziehung",23,185
+60. Die zwei Brüder .,"Adel, Männlich",21,72
+60. Die zwei Brüder .,"Adel, Gewerbebezeichnung",18,59
+60. Die zwei Brüder .,"Adel, Beziehung",16,123
+60. Die zwei Brüder .,"Männlich, Gewerbebezeichnung",13,36
+60. Die zwei Brüder .,"Weiblich, Beziehung",13,176
+60. Die zwei Brüder .,"Adel, Weiblich",12,105
+60. Die zwei Brüder .,"Adel, Nahrung",6,10
+60. Die zwei Brüder .,"Gewerbebezeichnung, Beziehung",5,37
+60. Die zwei Brüder .,"Weiblich, Gewerbebezeichnung",5,21
+60. Die zwei Brüder .,"Orte, Beziehung",5,82
+60. Die zwei Brüder .,"Adel, Verschiedenes",5,67
+60. Die zwei Brüder .,"Adel, Körperteil",4,61
+60. Die zwei Brüder .,"Männlich, Körperteil",4,30
+60. Die zwei Brüder .,"Wertgegenstände, Beziehung",4,31
+60. Die zwei Brüder .,"Männlich, Nahrung",4,10
+60. Die zwei Brüder .,"Adel, Tier",4,16
+60. Die zwei Brüder .,"Tier, Körperteil",3,25
+60. Die zwei Brüder .,"Männlich, Orte",3,41
+60. Die zwei Brüder .,"Männlich, Weiblich",3,33
+60. Die zwei Brüder .,"Gewerbebezeichnung, Nahrung",3,4
+60. Die zwei Brüder .,"Männlich, Wertgegenstände",3,32
+60. Die zwei Brüder .,"Gewerbebezeichnung, Körperteil",2,19
+60. Die zwei Brüder .,"Gewerbebezeichnung, Verschiedenes",2,12
+60. Die zwei Brüder .,"Tier, Gewerbebezeichnung",2,10
+60. Die zwei Brüder .,"Tier, Männlich",2,39
+60. Die zwei Brüder .,"Beziehung, Körperteil",2,53
+60. Die zwei Brüder .,"Beziehung, Verschiedenes",2,54
+60. Die zwei Brüder .,"Weiblich, Körperteil",1,41
+60. Die zwei Brüder .,"Weiblich, Verschiedenes",1,35
+60. Die zwei Brüder .,"Fabelwesen, Weiblich",1,16
+60. Die zwei Brüder .,"Wertgegenstände, Körperteil",1,14
+60. Die zwei Brüder .,"Männlich, Verschiedenes",1,32
+60. Die zwei Brüder .,"Tier, Weiblich",1,14
+60. Die zwei Brüder .,"Fabelwesen, Männlich",1,18
+60. Die zwei Brüder .,"Tier, Nahrung",1,4
+60. Die zwei Brüder .,"Adel, Orte",1,61
+60. Die zwei Brüder .,"Wertgegenstände, Orte",1,15
+60. Die zwei Brüder .,"Fabelwesen, Orte",1,15
+60. Die zwei Brüder .,"Fabelwesen, Beziehung",1,14
+60. Die zwei Brüder .,"Fabelwesen, Körperteil",1,9
+60. Die zwei Brüder .,"Orte, Körperteil",1,34
+61. Das Bürle .,"Tier, Gewerbebezeichnung",4,10
+61. Das Bürle .,"Weiblich, Nahrung",2,13
+61. Das Bürle .,"Weiblich, Gewerbebezeichnung",2,21
+61. Das Bürle .,"Gewerbebezeichnung, Wertgegenstände",2,9
+61. Das Bürle .,"Gewerbebezeichnung, Nahrung",1,4
+61. Das Bürle .,"Weiblich, Körperteil",1,41
+61. Das Bürle .,"Weiblich, Verschiedenes",1,35
+61. Das Bürle .,"Gewerbebezeichnung, Orte",1,14
+61. Das Bürle .,"Weiblich, Orte",1,65
+61. Das Bürle .,"Weiblich, Wertgegenstände",1,20
+62. Die Bienenkönigin .,"Männlich, Beziehung",5,185
+62. Die Bienenkönigin .,"Adel, Orte",2,61
+62. Die Bienenkönigin .,"Adel, Beziehung",2,123
+62. Die Bienenkönigin .,"Adel, Weiblich",1,105
+62. Die Bienenkönigin .,"Beziehung, Verschiedenes",1,54
+62. Die Bienenkönigin .,"Wertgegenstände, Orte",1,15
+62. Die Bienenkönigin .,"Adel, Männlich",1,72
+62. Die Bienenkönigin .,"Adel, Wertgegenstände",1,28
+62. Die Bienenkönigin .,"Weiblich, Beziehung",1,176
+62. Die Bienenkönigin .,"Männlich, Verschiedenes",1,32
+63. Die drei Federn .,"Männlich, Beziehung",4,185
+63. Die drei Federn .,"Adel, Weiblich",2,105
+63. Die drei Federn .,"Adel, Verschiedenes",1,67
+63. Die drei Federn .,"Weiblich, Beziehung",1,176
+63. Die drei Federn .,"Männlich, Weiblich",1,33
+63. Die drei Federn .,"Weiblich, Körperteil",1,41
+64. Die goldene Gans .,"Weiblich, Beziehung",4,176
+64. Die goldene Gans .,"Orte, Nahrung",4,16
+64. Die goldene Gans .,"Adel, Weiblich",3,105
+64. Die goldene Gans .,"Adel, Beziehung",3,123
+64. Die goldene Gans .,"Adel, Orte",2,61
+64. Die goldene Gans .,"Adel, Nahrung",2,10
+64. Die goldene Gans .,"Männlich, Gewerbebezeichnung",2,36
+64. Die goldene Gans .,"Gewerbebezeichnung, Beziehung",1,37
+64. Die goldene Gans .,"Gewerbebezeichnung, Orte",1,14
+64. Die goldene Gans .,"Weiblich, Gewerbebezeichnung",1,21
+64. Die goldene Gans .,"Adel, Verschiedenes",1,67
+64. Die goldene Gans .,"Orte, Körperteil",1,34
+64. Die goldene Gans .,"Männlich, Körperteil",1,30
+64. Die goldene Gans .,"Weiblich, Orte",1,65
+64. Die goldene Gans .,"Männlich, Beziehung",1,185
+64. Die goldene Gans .,"Gewerbebezeichnung, Körperteil",1,19
+64. Die goldene Gans .,"Orte, Beziehung",1,82
+64. Die goldene Gans .,"Männlich, Verschiedenes",1,32
+64. Die goldene Gans .,"Beziehung, Verschiedenes",1,54
+65. Allerleirauh .,"Adel, Gewerbebezeichnung",7,59
+65. Allerleirauh .,"Gewerbebezeichnung, Verschiedenes",4,12
+65. Allerleirauh .,"Adel, Verschiedenes",4,67
+65. Allerleirauh .,"Adel, Weiblich",3,105
+65. Allerleirauh .,"Adel, Beziehung",3,123
+65. Allerleirauh .,"Weiblich, Beziehung",3,176
+65. Allerleirauh .,"Adel, Körperteil",2,61
+65. Allerleirauh .,"Körperteil, Verschiedenes",2,23
+65. Allerleirauh .,"Beziehung, Verschiedenes",1,54
+65. Allerleirauh .,"Adel, Orte",1,61
+65. Allerleirauh .,"Adel, Fabelwesen",1,6
+65. Allerleirauh .,"Fabelwesen, Verschiedenes",1,4
+65. Allerleirauh .,"Fabelwesen, Gewerbebezeichnung",1,3
+65. Allerleirauh .,"Weiblich, Verschiedenes",1,35
+65. Allerleirauh .,"Gewerbebezeichnung, Körperteil",1,19
+66. Häsichenbraut .,"Tier, Gewerbebezeichnung",1,10
+67. Die zwölf Jäger .,"Orte, Körperteil",1,34
+67. Die zwölf Jäger .,"Adel, Gewerbebezeichnung",1,59
+67. Die zwölf Jäger .,"Weiblich, Beziehung",1,176
+67. Die zwölf Jäger .,"Adel, Weiblich",1,105
+67. Die zwölf Jäger .,"Adel, Beziehung",1,123
+68. De Gaudeif un sien Meester .,"Fabelwesen, Weiblich",1,16
+68. De Gaudeif un sien Meester .,"Fabelwesen, Orte",1,15
+68. De Gaudeif un sien Meester .,"Fabelwesen, Männlich",1,18
+68. De Gaudeif un sien Meester .,"Weiblich, Orte",1,65
+68. De Gaudeif un sien Meester .,"Männlich, Orte",1,41
+68. De Gaudeif un sien Meester .,"Wertgegenstände, Verschiedenes",1,8
+68. De Gaudeif un sien Meester .,"Männlich, Weiblich",1,33
+69. Jorinde und Joringel .,"Weiblich, Orte",1,65
+70. Die drei Glückskinder .,"Männlich, Beziehung",3,185
+70. Die drei Glückskinder .,"Wertgegenstände, Beziehung",1,31
+70. Die drei Glückskinder .,"Adel, Wertgegenstände",1,28
+70. Die drei Glückskinder .,"Adel, Beziehung",1,123
+70. Die drei Glückskinder .,"Adel, Männlich",1,72
+70. Die drei Glückskinder .,"Männlich, Wertgegenstände",1,32
+71. Sechse kommen durch die ganze Welt .,"Adel, Orte",4,61
+71. Sechse kommen durch die ganze Welt .,"Adel, Gewerbebezeichnung",4,59
+71. Sechse kommen durch die ganze Welt .,"Männlich, Orte",4,41
+71. Sechse kommen durch die ganze Welt .,"Weiblich, Beziehung",3,176
+71. Sechse kommen durch die ganze Welt .,"Adel, Weiblich",3,105
+71. Sechse kommen durch die ganze Welt .,"Adel, Beziehung",3,123
+71. Sechse kommen durch die ganze Welt .,"Adel, Körperteil",2,61
+71. Sechse kommen durch die ganze Welt .,"Adel, Wertgegenstände",2,28
+71. Sechse kommen durch die ganze Welt .,"Orte, Verschiedenes",2,33
+71. Sechse kommen durch die ganze Welt .,"Orte, Körperteil",1,34
+71. Sechse kommen durch die ganze Welt .,"Adel, Männlich",1,72
+71. Sechse kommen durch die ganze Welt .,"Adel, Verschiedenes",1,67
+71. Sechse kommen durch die ganze Welt .,"Gewerbebezeichnung, Wertgegenstände",1,9
+71. Sechse kommen durch die ganze Welt .,"Männlich, Gewerbebezeichnung",1,36
+71. Sechse kommen durch die ganze Welt .,"Gewerbebezeichnung, Beziehung",1,37
+71. Sechse kommen durch die ganze Welt .,"Weiblich, Gewerbebezeichnung",1,21
+71. Sechse kommen durch die ganze Welt .,"Männlich, Wertgegenstände",1,32
+71. Sechse kommen durch die ganze Welt .,"Männlich, Weiblich",1,33
+71. Sechse kommen durch die ganze Welt .,"Wertgegenstände, Körperteil",1,14
+71. Sechse kommen durch die ganze Welt .,"Männlich, Beziehung",1,185
+71. Sechse kommen durch die ganze Welt .,"Weiblich, Wertgegenstände",1,20
+71. Sechse kommen durch die ganze Welt .,"Wertgegenstände, Beziehung",1,31
+72. Der Wolf und der Mensch .,"Tier, Körperteil",2,25
+72. Der Wolf und der Mensch .,"Tier, Männlich",1,39
+72. Der Wolf und der Mensch .,"Tier, Beziehung",1,11
+72. Der Wolf und der Mensch .,"Männlich, Körperteil",1,30
+72. Der Wolf und der Mensch .,"Männlich, Beziehung",1,185
+72. Der Wolf und der Mensch .,"Beziehung, Körperteil",1,53
+73. Der Wolf und der Fuchs .,"Tier, Orte",4,21
+73. Der Wolf und der Fuchs .,"Tier, Weiblich",2,14
+73. Der Wolf und der Fuchs .,"Weiblich, Orte",2,65
+73. Der Wolf und der Fuchs .,"Weiblich, Nahrung",1,13
+73. Der Wolf und der Fuchs .,"Orte, Nahrung",1,16
+73. Der Wolf und der Fuchs .,"Tier, Nahrung",1,4
+73. Der Wolf und der Fuchs .,"Tier, Männlich",1,39
+73. Der Wolf und der Fuchs .,"Tier, Verschiedenes",1,11
+74. Der Fuchs und die Frau Gevatterin .,"Tier, Weiblich",3,14
+74. Der Fuchs und die Frau Gevatterin .,"Tier, Orte",2,21
+74. Der Fuchs und die Frau Gevatterin .,"Weiblich, Verschiedenes",1,35
+74. Der Fuchs und die Frau Gevatterin .,"Weiblich, Orte",1,65
+75. Der Fuchs und die Katze .,"Tier, Männlich",5,39
+75. Der Fuchs und die Katze .,"Tier, Verschiedenes",1,11
+75. Der Fuchs und die Katze .,"Männlich, Verschiedenes",1,32
+75. Der Fuchs und die Katze .,"Tier, Körperteil",1,25
+75. Der Fuchs und die Katze .,"Tier, Orte",1,21
+75. Der Fuchs und die Katze .,"Männlich, Körperteil",1,30
+75. Der Fuchs und die Katze .,"Männlich, Orte",1,41
+75. Der Fuchs und die Katze .,"Körperteil, Verschiedenes",1,23
+76. Die Nelke .,"Adel, Gewerbebezeichnung",6,59
+76. Die Nelke .,"Adel, Verschiedenes",5,67
+76. Die Nelke .,"Adel, Weiblich",4,105
+76. Die Nelke .,"Adel, Männlich",4,72
+76. Die Nelke .,"Gewerbebezeichnung, Körperteil",3,19
+76. Die Nelke .,"Gewerbebezeichnung, Beziehung",2,37
+76. Die Nelke .,"Weiblich, Gewerbebezeichnung",2,21
+76. Die Nelke .,"Adel, Beziehung",2,123
+76. Die Nelke .,"Adel, Körperteil",2,61
+76. Die Nelke .,"Männlich, Gewerbebezeichnung",1,36
+76. Die Nelke .,"Gewerbebezeichnung, Verschiedenes",1,12
+76. Die Nelke .,"Orte, Verschiedenes",1,33
+76. Die Nelke .,"Männlich, Beziehung",1,185
+76. Die Nelke .,"Adel, Orte",1,61
+76. Die Nelke .,"Orte, Beziehung",1,82
+76. Die Nelke .,"Weiblich, Beziehung",1,176
+77. Das kluge Grethel .,"Männlich, Beziehung",5,185
+78. Der alte Großvater und der Enkel .,"Weiblich, Beziehung",1,176
+78. Der alte Großvater und der Enkel .,"Beziehung, Verschiedenes",1,54
+79. Die Wassernixe .,"Fabelwesen, Weiblich",3,16
+79. Die Wassernixe .,"Weiblich, Beziehung",2,176
+79. Die Wassernixe .,"Weiblich, Orte",2,65
+79. Die Wassernixe .,"Orte, Beziehung",2,82
+79. Die Wassernixe .,"Fabelwesen, Orte",1,15
+79. Die Wassernixe .,"Fabelwesen, Beziehung",1,14
+79. Die Wassernixe .,"Männlich, Weiblich",1,33
+79. Die Wassernixe .,"Männlich, Orte",1,41
+79. Die Wassernixe .,"Männlich, Beziehung",1,185
+80. Von dem Tode des Hühnchens .,"Tier, Orte",2,21
+80. Von dem Tode des Hühnchens .,"Tier, Nahrung",2,4
+80. Von dem Tode des Hühnchens .,"Orte, Nahrung",1,16
+80. Von dem Tode des Hühnchens .,"Nahrung, Verschiedenes",1,6
+80. Von dem Tode des Hühnchens .,"Tier, Verschiedenes",1,11
+81. Bruder Lustig .,"Männlich, Beziehung",51,185
+81. Bruder Lustig .,"Wertgegenstände, Beziehung",12,31
+81. Bruder Lustig .,"Männlich, Wertgegenstände",12,32
+81. Bruder Lustig .,"Beziehung, Körperteil",5,53
+81. Bruder Lustig .,"Adel, Beziehung",5,123
+81. Bruder Lustig .,"Männlich, Körperteil",5,30
+81. Bruder Lustig .,"Adel, Männlich",5,72
+81. Bruder Lustig .,"Männlich, Orte",3,41
+81. Bruder Lustig .,"Beziehung, Verschiedenes",3,54
+81. Bruder Lustig .,"Männlich, Verschiedenes",3,32
+81. Bruder Lustig .,"Orte, Beziehung",3,82
+81. Bruder Lustig .,"Männlich, Gewerbebezeichnung",3,36
+81. Bruder Lustig .,"Gewerbebezeichnung, Beziehung",3,37
+81. Bruder Lustig .,"Männlich, Weiblich",2,33
+81. Bruder Lustig .,"Beziehung, Nahrung",2,9
+81. Bruder Lustig .,"Wertgegenstände, Nahrung",2,5
+81. Bruder Lustig .,"Adel, Wertgegenstände",2,28
+81. Bruder Lustig .,"Männlich, Nahrung",2,10
+81. Bruder Lustig .,"Adel, Weiblich",2,105
+81. Bruder Lustig .,"Weiblich, Beziehung",2,176
+81. Bruder Lustig .,"Wertgegenstände, Verschiedenes",1,8
+81. Bruder Lustig .,"Wertgegenstände, Körperteil",1,14
+81. Bruder Lustig .,"Wertgegenstände, Orte",1,15
+81. Bruder Lustig .,"Weiblich, Nahrung",1,13
+81. Bruder Lustig .,"Gewerbebezeichnung, Verschiedenes",1,12
+82. De Spielhansl .,"Nahrung, Verschiedenes",2,6
+82. De Spielhansl .,"Orte, Verschiedenes",1,33
+82. De Spielhansl .,"Männlich, Verschiedenes",1,32
+82. De Spielhansl .,"Männlich, Nahrung",1,10
+83. Hans im Glück .,"Wertgegenstände, Körperteil",3,14
+83. Hans im Glück .,"Wertgegenstände, Verschiedenes",2,8
+83. Hans im Glück .,"Männlich, Wertgegenstände",1,32
+83. Hans im Glück .,"Männlich, Verschiedenes",1,32
+83. Hans im Glück .,"Orte, Nahrung",1,16
+84. Hans heirathet .,"Wertgegenstände, Nahrung",1,5
+84. Hans heirathet .,"Nahrung, Körperteil",1,6
+84. Hans heirathet .,"Weiblich, Orte",1,65
+84. Hans heirathet .,"Wertgegenstände, Körperteil",1,14
+85. Die Goldkinder .,"Männlich, Beziehung",4,185
+85. Die Goldkinder .,"Weiblich, Beziehung",4,176
+85. Die Goldkinder .,"Weiblich, Körperteil",3,41
+85. Die Goldkinder .,"Beziehung, Körperteil",1,53
+85. Die Goldkinder .,"Wertgegenstände, Orte",1,15
+85. Die Goldkinder .,"Fabelwesen, Beziehung",1,14
+85. Die Goldkinder .,"Fabelwesen, Körperteil",1,9
+85. Die Goldkinder .,"Orte, Beziehung",1,82
+85. Die Goldkinder .,"Fabelwesen, Männlich",1,18
+85. Die Goldkinder .,"Männlich, Orte",1,41
+86. Der Fuchs und die Gänse .,"Tier, Körperteil",1,25
