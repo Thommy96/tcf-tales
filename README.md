@@ -1,7 +1,7 @@
 # tcf-tales
 Authors: Thomas Bott, Sebastian Sammet
 ## Project of Text Technology
-This Repository contains scripts and files for the project of the course Text Technology WS 20/21 at the IMS, University of Stuttgart.
+This Repository contains scripts and files for the project of the course Text Technology WS 20/21 at the IMS, University of Stuttgart.  
 For a topic description see: ``tt_project_description_Sammt_Bott.pdf`` and for the slides of our presentation see: ``TCF_Tales_slides.pdf``.
 ## Workflow
 In the following it is described how to run the scripts and generate outputs.
@@ -34,7 +34,7 @@ python3 <path_to>/main.py <path_to_character_file> <path_to_category_file>
 As starting point you can use ``test_characters.txt`` as character file.
 After running the script for the first time, a character list is created automatically containing the top 10 most frequent nouns of each tale and the top 50 most frequent nouns over all tales. This character file can then be used to run the script again in order to gain a richer analysis.
 #### Category File
-You should use ``categories.tsv`` as category file. The top 10 most frequent nouns from each tale and the top 50 most frequent nouns overall of the first volume were manually annotated into different categories. A noun can appear in multiple categories.
+You should use ``categories.tsv`` as category file. The top 10 most frequent nouns from each tale and the top 50 most frequent nouns overall of the first volume were manually annotated into different categories. A noun can appear in multiple categories.  
 The idea behind this is to analyse relations between concepts of nouns.
 #### Option: include the second volume
 If you use the option ``--volume2``, the second volume of the tales collection can be included in the analysis. However for the access part, we used only the first volume here due to runtime problems during the import in Neo4j.
@@ -42,12 +42,12 @@ Depending on using only the first volume or including the second volume, the out
 #### Collect
 The tcf xml file is automaticall downloaded in tcf_file.py.
 You can find the used corpus here: 
-First volume: 
-https://www.deutschestextarchiv.de/book/show/grimm_maerchen01_1857
-download: https://www.deutschestextarchiv.de/book/download_fulltcf/32290
-Second volume: 
-https://www.deutschestextarchiv.de/book/show/grimm_maerchen02_1857
-download: https://www.deutschestextarchiv.de/book/download_fulltcf/32296
+First volume:  
+https://www.deutschestextarchiv.de/book/show/grimm_maerchen01_1857  
+download: https://www.deutschestextarchiv.de/book/download_fulltcf/32290  
+Second volume:  
+https://www.deutschestextarchiv.de/book/show/grimm_maerchen02_1857  
+download: https://www.deutschestextarchiv.de/book/download_fulltcf/32296  
 
 Corpus statistics are computed, written to files and plots are generated.
 #### Prepare
@@ -69,13 +69,13 @@ Pay attention to the following steps when setting up the DBMS:
 - set 'apoc.import.file.enabled=true' in the config file of the DBMS
 - activate the apoc plugin
 
-You can import the xml file and create a graph with the Cypher commands provided in ``neo4j_import_commands.txt``.
+You can import the xml file and create a graph with the Cypher commands provided in ``neo4j_import_commands.txt``.  
 Therefore you can simply copy & paste all commands at once into the shell in Neo4j.
 
-``cypher_queries.txt`` contains several queries that can be used to analyse properties of the graph and answer questions regarding characters/nouns, categories and relations.
-The generated lists and screenshots with corresponding queries can be found in the folder ``query_results`` of this repository.
+``cypher_queries.txt`` contains several queries that can be used to analyse properties of the graph and answer questions regarding characters/nouns, categories and relations.  
+The generated lists and screenshots with corresponding queries can be found in the folder ``query_results`` of this repository.  
 The names of the generated files are also included for each corresponding query in ``cypher_queries.txt``.
-There you can also find a short overview with more information: ``overview.md``
+There you can also find a short overview with more information: ``overview.md``.  
 Note: in the graph we only talk about characters while we actually mean characters/nouns since we also analyse nouns other than characters.
 
 You can generate a sorted list of similar tales by running ``similar_tales.py``.
