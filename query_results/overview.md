@@ -24,4 +24,4 @@ Körperteil    |Body Part|
 
 The categories "Weiblich" and "Männlich" have some overlap with "Adel", "Gewerbebezeichnung" and "Beziehung".
 ### Queries
-After we sorted out the categories we wrote queries for Neo4j to investigate the relations between our noun categories. The corresponding queries are found in ``cypher_queries.txt``. In our project are also found some results, which are in .csv and . png-Format.
+After we sorted out the categories we wrote queries for Neo4j to investigate the relations between our noun categories. The corresponding queries are found in ``cypher_queries.txt``. In our project are also found some results, which are in .csv and .png-Format.
