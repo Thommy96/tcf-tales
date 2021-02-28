@@ -5,8 +5,10 @@ This overview contains information about the enclosed query results. These resul
 ## Motivation
 As we investigated the relations between nouns we ran into a problem: There are many different nouns and appart from the most frequent ones the relations between them were hard to research. In an effort to make the relations more clear we created categories and put those nouns in categories, that fit and were frequent (in the Top Nouns file).
 ### Categories
-First and foremost in our resarch of relations between nouns we wanted to investigate especially characters, but as research continued other nouns also catched your interests. So we came up with 12 Categories:
+First and foremost in our resarch of relations between nouns we wanted to investigate especially characters, but as research continued other nouns also catched our interests. So we came up with 12 Categories:
 <table>
+   <thead>
+    <tr>
 Adel        |(Nobility)  |Any title that denotes nobility
 Tier        |(Animal)    
 Fabelwesen  |(Mythical Creature) |Creatures belonging to the realms of myths
@@ -19,4 +21,6 @@ Eigenname   |(Proper Name)
 Beziehung   |(Relation)  |A noun that implies a relation to someone else
 Nahrung     |(Food)
 Körperteil  |(Body Part)
+      </tr>
+  </thead>
 </table>
