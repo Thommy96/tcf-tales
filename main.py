@@ -27,12 +27,14 @@ def main():
     category_file = args['<category_file>']
     is_vol2 = args['--volume2']
 
+    # load characters
     characters = []
     with open(character_file, 'r') as character_file:
         for line in character_file:
             line = line.strip()
             characters.append(line)
 
+    # load categories
     categories = {}
     categories_df = pd.read_csv(category_file, sep='\t', encoding='utf-8')
     categories_df = categories_df.dropna()
@@ -46,6 +48,7 @@ def main():
         if sc not in characters:
             characters.append(sc)
 
+    # set output directory
     if is_vol2:
         output_dir = '/home/users0/bottts/tcf-tales/vol1_and_vol2/'
     else:

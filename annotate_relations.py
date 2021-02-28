@@ -27,10 +27,10 @@ class Annotation:
         self.character_freqs_total, self.character_freqs_tales, self.relation_freqs_total, self.relation_freqs_tales, self.category_freqs_total, self.category_freqs_tales, self.category_relation_freqs_total, self.category_relation_freqs_tales = self.explore_relations()
 
     def explore_relations(self) -> tuple:
-        """This function explores relations for the specified characters.
+        """This function explores relations for the specified characters and categories.
 
         Returns:
-            tuple: character frequencies (total and per tale), relation frequencies (total and per tale)
+            tuple: character and category frequencies (total and per tale), relation frequencies (total and per tale)
         """
         print("Exploring Relations ...")
         character_combinations = list(itertools.combinations(self.characters, 2))
@@ -250,6 +250,14 @@ class Annotation:
         return reparsed.toprettyxml(indent="  ")
     
     def get_categories_by_noun(self, noun:str) -> list:
+        """This function returns a list of categories that are present for a given noun
+
+        Args:
+            noun (str): given noun
+
+        Returns:
+            list: categories
+        """
         keys = []
         for category, nouns in self.categories.items():
             if noun in nouns:
@@ -257,6 +265,14 @@ class Annotation:
         return keys
     
     def noun_in_categories(self, noun:str) -> bool:
+        """This function checks if a given noun is contained in any category
+
+        Args:
+            noun (str): given noun
+
+        Returns:
+            bool: True if noun is in any category, False if not
+        """
         b = False
         for category, nouns in self.categories.items():
             if noun in nouns:
