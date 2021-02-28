@@ -7,17 +7,15 @@ As we investigated the relations between nouns we ran into a problem: There are 
 ### Categories
 First and foremost in our resarch of relations between nouns we wanted to investigate especially characters, but as research continued other nouns also catched our interests. So we came up with 12 Categories:
 
-Adel|(Nobility)|Any title that denotes nobility
-Tier|(Animal)|
-
-
-Fabelwesen  |(Mythical Creature) |Creatures belonging to the realms of myths
-Männlich    |(Male)      |Any noun that is explicitely male
-Weiblich    |(Female)    |Any noun that is explicitely female
-Gewerbebezeichnung |(Profession Title) |Any noun telling what a person does for a living
-Wertgegenstände |(Valuables) |Items or materials that are considered valuable
-Orte        |(Places)
-Eigenname   |(Proper Name)
-Beziehung   |(Relation)  |A noun that implies a relation to someone else
-Nahrung     |(Food)
-Körperteil  |(Body Part)
+- Adel        |(Nobility)  |Any title that denotes nobility
+- Tier        |(Animal)    
+- Fabelwesen  |(Mythical Creature) |Creatures belonging to the realms of myths
+- Männlich    |(Male)      |Any noun that is explicitely male
+- Weiblich    |(Female)    |Any noun that is explicitely female
+- Gewerbebezeichnung |(Profession Title) |Any noun telling what a person does for a living
+- Wertgegenstände |(Valuables) |Items or materials that are considered valuable
+- Orte        |(Places)
+- Eigenname   |(Proper Name)
+- Beziehung   |(Relation)  |A noun that implies a relation to someone else
+- Nahrung     |(Food)
+- Körperteil  |(Body Part)
