@@ -1,31 +1,39 @@
+//argments in brackets <> have to be replaced
+
 //return character and character relation lists
 
 //return list of relations sorted by frequency over all tales
+//rel-freqs.csv
 MATCH (r:Relation)
 RETURN r.characters AS Characters, r.frequency AS CharacterFrequency
 ORDER BY toInteger(r.frequency) DESC;
 
 //return list of relations sorted by frequency for each tale
+//rel-freqs-per-tale.csv
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation)
 RETURN t.title AS Tale, r.characters AS Characters, h.frequency AS TaleOccurrenceFrequency, r.frequency AS RelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
 
 //return list of relations sorted by frequecy for a specific tale (replace <tale_id>)
+//rel-freqs-tale.csv
 MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(r:Relation)
 RETURN t.title AS Tale, r.characters AS Characters, h.frequency AS TaleOccurrenceFrequency, r.frequency AS RelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
 
 //return list of relations sorted by tale distribution frequency (in how many different tales the relation appears)
+//rel-tale-distr.csv
 MATCH (r:Relation)-[h:HAPPENS_IN]->(t:Tale)
 RETURN r.characters AS Characters, COUNT(h) AS TaleDistributionFrequency
 ORDER BY COUNT(h) DESC;
 
 //return list of relations for a specific character sorted by relation frequency over all tales
+//rel-char-König.csv
 MATCH (c:Character {name:"<character>"})-[re:RELATION]->(r:Relation)
 RETURN r.characters AS Characters, r.frequency AS RelationFrequency
 ORDER BY toInteger(r.frequency) DESC;
 
 //return list of relations for a specific character sorted by relation frequency for a specific tale
+//rel-char-König-t0.csv
 MATCH (c:Character {name:"<character>"})-[re:RELATION]->(r:Relation)-[h:HAPPENS_IN]->(t:Tale {id:"<tale_id>"})
 RETURN r.characters AS Characters, h.frequency AS TaleOccurrenceFrequency, r.frequency AS RelationFrequency, t.title AS Tale
 ORDER BY toInteger(h.frequency) DESC;
@@ -35,31 +43,37 @@ ORDER BY toInteger(h.frequency) DESC;
 //return category and category relation lists
 
 //return list of category relations sorted by frequency over all tales
+//cat-freqs.csv
 MATCH (kr:CategoryRelation)
 RETURN kr.categories AS Categories, kr.frequency AS CategoryFrequency
 ORDER BY toInteger(kr.frequency) DESC;
 
 //return list of category relations sorted by frequency for each tale
+//cat-freqs-per-tale.csv
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(kr:CategoryRelation)
 RETURN t.title AS Tale, kr.categories AS Categories, h.frequency AS TaleOccurrenceFrequency, kr.frequency AS CategoryRelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
 
 //return list of category relations sorted by frequecy for a specific tale (replace <tale_id>)
+//cat-freqs-tale.csv
 MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(kr:CategoryRelation)
 RETURN t.title AS Tale, kr.categories AS Categories, h.frequency AS TaleOccurrenceFrequency, kr.frequency AS CategoryRelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
 
 //return list of category relations sorted by tale distribution frequency (in how many different tales the category relation appears)
+//cat-tale-distr.csv
 MATCH (kr:CategoryRelation)-[h:HAPPENS_IN]->(t:Tale)
 RETURN kr.categories AS Categories, COUNT(h) AS TaleDistributionFrequency
 ORDER BY COUNT(h) DESC;
 
 //return list of category relations for a specific category sorted by category relation frequency over all tales
+//cat-rel-Adel.csv
 MATCH (k:Category {name:"<category>"})-[re:RELATION]->(kr:CategoryRelation)
 RETURN kr.categories AS Categories, kr.frequency AS CategoryRelationFrequency
 ORDER BY toInteger(kr.frequency) DESC;
 
 //return list of category relations for a specific category sorted by category relation frequency for a specific tale
+//cat-rel-Adel-t0.csv
 MATCH (k:Category {name:"<category>"})-[re:RELATION]->(kr:CategoryRelation)-[h:HAPPENS_IN]->(t:Tale {id:"<tale_id>"})
 RETURN kr.categories AS Categories, h.frequency AS TaleOccurrenceFrequency, kr.frequency AS CategoryRelationFrequency, t.title AS Tale
 ORDER BY toInteger(h.frequency) DESC;
