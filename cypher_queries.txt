@@ -83,26 +83,30 @@ ORDER BY toInteger(h.frequency) DESC;
 //display nodes and edges for characters and relations
 
 //display nodes for tale and relation for a specific tale where the relation appears more than once
+//tale-relations.png
 MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(r:Relation)
 WHERE toInteger(h.frequency) > 1
 RETURN t, h, r;
 
-//display a specific relation and the tales it appears in (more than once)
+//display a specific relation and the tales it appears in
+//rel-tales.png
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation {characters: "<character1>, <character2>"})
-WHERE toInteger(h.frequency) > 1
 RETURN t, h, r;
 
 //display a specific character and all tales in which it appears more than once
+//char-tales.png
 MATCH (c:Character {name:"<character>"})-[a:APPEARS_IN]->(t:Tale)
 WHERE toInteger(a.frequency) > 1
 RETURN c, a, t;
 
 //display all relations for a character (frequency > 1)
+//char-relations.png
 MATCH (c:Character {name:"<character>"})-[re:RELATION]->(r:Relation)<-[re2:RELATION]-(c2:Character)
 WHERE toInteger(r.frequency) > 1
 RETURN c, re, r, re2, c2;
 
 //display all relations for a character in a specific tale
+//char-tale-relations.png
 MATCH (c:Character {name:"<character>"})-[re:RELATION]->(r:Relation)-[h:HAPPENS_IN]->(t:Tale {id:"<tale_id>"})
 RETURN re, r, t, h;
 
@@ -111,32 +115,32 @@ RETURN re, r, t, h;
 //display nodes and edges for categories and category relations
 
 //display nodes for tale and category relation for a specific tale where the category relation appears more than once
+//tale-relations-cat.png
 MATCH (t:Tale {id:"<tale_id>"})<-[h:HAPPENS_IN]-(kr:CategoryRelation)
 WHERE toInteger(h.frequency) > 1
 RETURN t, h, kr;
 
-//display a specific category relation and the tales it appears in more than once
+//display a specific category relation and the tales it appears in
+//cat-rel-tales.png
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(kr:CategoryRelation {categories: "<category1>, <category2>"})
-WHERE toInteger(h.frequency) > 1
 RETURN t, h, kr;
 
 //display a specific category and all tales in which it appears more than once
+//cat-tales.png
 MATCH (k:Category {name:"<category>"})-[a:APPEARS_IN]->(t:Tale)
 WHERE toInteger(a.frequency) > 1
 RETURN k, a, t;
 
 //display all category relations for a category (category relation frequency > 1)
+//cat-relations.png
 MATCH (k1:Category {name:"<category>"})-[re1:RELATION]->(kr:CategoryRelation)<-[re2:RELATION]-(k2:Category)
 WHERE toInteger(kr.frequency) > 1
 RETURN k1, re1, kr, re2, k2;
 
 //display all category relations for a category in a specific tale
+//cat-tale-relations.png
 MATCH (k:Category {name:"<category>"})-[re:RELATION]->(kr:CategoryRelation)-[h:HAPPENS_IN]->(t:Tale {id:"<tale_id>"})
 RETURN re, kr, t, h;
-
-//display lemma for a token
-MATCH (t:Token {text: "<token>"})-[r:LEMMATISIERT]->(l:Lemma)
-RETURN l;
 
 ------------------------------------------------------
 
