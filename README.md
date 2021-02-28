@@ -4,7 +4,7 @@ Authors: Thomas Bott, Sebastian Sammet
 This Repository contains scripts and files for the project of the course Text Technology WS 20/21 at the IMS, University of Stuttgart.  
 For a topic description see: ``tt_project_description_Sammt_Bott.pdf`` and for the slides of our presentation see: ``TCF_Tales_slides.pdf``.
 ## Workflow
-In the following it is described how to run the scripts and generate outputs.
+In the following it is described how to run the scripts and generate outputs.  
 All outputs except of the xml files (we are not sure if we are allowed to share them here) are already contained in this repository.
 ### 1. Install requirements
 First, you should make sure the required packages are installed by running:
@@ -40,8 +40,8 @@ The idea behind this is to analyse relations between concepts of nouns.
 If you use the option ``--volume2``, the second volume of the tales collection can be included in the analysis. However for the access part, we used only the first volume here due to runtime problems during the import in Neo4j.
 Depending on using only the first volume or including the second volume, the outputs of the script are saved in different folders, ``vol1``or ``vol2``.
 #### Collect
-The tcf xml file is automaticall downloaded in tcf_file.py.
-You can find the used corpus here: 
+The tcf xml file is automaticall downloaded in tcf_file.py.  
+You can find the used corpus here:  
 First volume:  
 https://www.deutschestextarchiv.de/book/show/grimm_maerchen01_1857  
 download: https://www.deutschestextarchiv.de/book/download_fulltcf/32290  
