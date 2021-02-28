@@ -74,7 +74,8 @@ Therefore you can simply copy & paste all commands at once into the shell in Neo
 
 ``cypher_queries.txt`` contains several queries that can be used to analyse properties of the graph and answer questions regarding characters/nouns, categories and relations.
 The generated lists and screenshots with corresponding queries can be found in the folder ``query_results`` of this repository.
-Note: in these files we only talk about characters while we actually mean characters/nouns since we also analyse nouns other than characters.
+The names of the generated list files are also included for each corresponding query in ``cypher_queries.txt``.
+Note: in the graph we only talk about characters while we actually mean characters/nouns since we also analyse nouns other than characters.
 
 You can generate a sorted list of similar tales by running ``similar_tales.py``.
 ```
