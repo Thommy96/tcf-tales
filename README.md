@@ -42,8 +42,12 @@ Depending on using only the first volume or including the second volume, the out
 #### Collect
 The tcf xml file is automaticall downloaded in tcf_file.py.
 You can find the used corpus here: 
-First volume: https://www.deutschestextarchiv.de/book/show/grimm_maerchen01_1857, download: https://www.deutschestextarchiv.de/book/download_fulltcf/32290
-Second volume: https://www.deutschestextarchiv.de/book/show/grimm_maerchen02_1857, download: https://www.deutschestextarchiv.de/book/download_fulltcf/32296
+First volume: 
+https://www.deutschestextarchiv.de/book/show/grimm_maerchen01_1857
+download: https://www.deutschestextarchiv.de/book/download_fulltcf/32290
+Second volume: 
+https://www.deutschestextarchiv.de/book/show/grimm_maerchen02_1857
+download: https://www.deutschestextarchiv.de/book/download_fulltcf/32296
 
 Corpus statistics are computed, written to files and plots are generated.
 #### Prepare
