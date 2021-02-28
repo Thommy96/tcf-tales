@@ -5,7 +5,7 @@ MATCH (r:Relation)
 RETURN r.characters AS Characters, r.frequency AS CharacterFrequency
 ORDER BY toInteger(r.frequency) DESC;
 
-//return list of relations sorted by frequecy for each tale
+//return list of relations sorted by frequency for each tale
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(r:Relation)
 RETURN t.title AS Tale, r.characters AS Characters, h.frequency AS TaleOccurrenceFrequency, r.frequency AS RelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
@@ -39,7 +39,7 @@ MATCH (kr:CategoryRelation)
 RETURN kr.categories AS Categories, kr.frequency AS CategoryFrequency
 ORDER BY toInteger(kr.frequency) DESC;
 
-//return list of category relations sorted by frequecy for each tale
+//return list of category relations sorted by frequency for each tale
 MATCH (t:Tale)<-[h:HAPPENS_IN]-(kr:CategoryRelation)
 RETURN t.title AS Tale, kr.categories AS Categories, h.frequency AS TaleOccurrenceFrequency, kr.frequency AS CategoryRelationFrequency
 ORDER BY toInteger(split(t.id, "t")[1]) , toInteger(h.frequency) DESC;
